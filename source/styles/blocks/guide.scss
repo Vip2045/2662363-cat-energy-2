@@ -1,92 +1,71 @@
 .guide {
-  width: 280px;
-  height: 380px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 .guide__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  margin: -20px 0 40px;
   text-align: left;
   color: #000000;
-  margin-top: -40px;
-  margin-bottom: 40px;
+  font-family: $oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
 }
 
 .guide__list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  margin: 0;
   padding: 0;
 }
 
 .guide__item {
-  display: flex;
-  align-items: center;
-  width: 280px;
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 20px;
 }
 
-.square {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #68b738;
+.guide__item::before {
+  content: "";
+  background-color: $thema;
   width: 60px;
   height: 60px;
-  flex-shrink: 0;
-  margin-right: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .guide__description {
-  width: 200px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
   color: #444444;
-  margin-top: -47px;
-  margin-bottom: -42px;
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-/* icons */
-
-/* иконка листа */
-.guide__item--leaf .square::before {
+.guide__item--leaf::before {
   content: "";
-  width: 30px;
-  height: 32px;
-  background: url("../../images/guide/icon-leaf.svg") no-repeat center center;
-  background-size: contain;
+  background-image: url("../images/guide/icon-leaf.svg");
+  background-size: 30px 32px;
 }
 
-/* иконка стакана */
-.guide__item--glass .square::before {
+.guide__item--glass::before {
   content: "";
-  width: 26px;
-  height: 29px;
-  background: url("../../images/guide/icon-glass.svg") no-repeat center center;
-  background-size: contain;
+  background-image: url("../images/guide/icon-glass.svg");
+  background-size: 26px 29px;
 }
 
-/* иконка столовые приборы */
-.guide__item--cutlery .square::before {
+.guide__item--cutlery::before {
   content: "";
-  width: 25px;
-  height: 30px;
-  background: url("../../images/guide/icon-cutlery.svg") no-repeat center center;
-  background-size: contain;
+  background-image: url("../images/guide/icon-cutlery.svg");
+  background-size: 25px 30px;
 }
 
-/* иконка весы */
-.guide__item--scales .square::before {
+.guide__item--scales::before {
   content: "";
-  width: 27px;
-  height: 31px;
-  background: url("../../images/guide/icon-scales.svg") no-repeat center center;
-  background-size: contain;
+  background-image: url("../images/guide/icon-scales.svg");
+  background-size: 27px 31px;
 }

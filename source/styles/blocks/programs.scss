@@ -1,41 +1,37 @@
 .programs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #ffffff;
   padding: 20px;
 }
 
 .programs__wrapper {
-  list-style: none;
-  padding: 0;
   margin: 0;
-  align-items: center;
+  padding: 0;
+  list-style: none;
 }
 
 .programs__item {
-  width: 280px;
   min-height: 266px;
-  background-color: #f2f2f2;
-  position: relative;
-  padding: 20px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
   margin-bottom: 20px;
+  padding: 29px 20px 19px;
+  position: relative;
 }
 
-.circle-slim {
+.programs__item:last-child {
+  margin-bottom: 0;
+}
+
+.programs__item::after {
+  content: "";
   position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #68b738;
+  background-color: $thema;
   top: 25px;
   left: 20px;
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Иконка кота 1 slim */
@@ -49,20 +45,6 @@
   top: 20px;
   left: 26px;
   z-index: 3;
-}
-
-.circle-pro {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #68b738;
-  top: 24px;
-  left: 21px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Иконка кота 2 pro */
@@ -79,15 +61,13 @@
 }
 
 .programs__title {
-  font-family: "Oswald", sans-serif;
+  margin: 0 0 20px 70px;
+  font-family: $oswald;
+  padding: 0;
   font-weight: 400;
-  font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 9px;
-  margin-left: 70px;
-  padding: 0;
 }
 
 .programs__title--pro {
@@ -99,30 +79,23 @@
 }
 
 .programs__description {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  margin-top: 30px;
-  margin-left: 0;
-  width: 227px;
-  height: 90px;
-  padding: 0;
+  padding: 0 0 23px;
+  margin: 0 0 19px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-.line {
-  height: 1px;
-  background-color: #d9d9d9;
-  margin-top: 22px;
-}
 
 .programs__link {
   display: inline-block;
   align-items: center;
   margin-top: 19px;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
