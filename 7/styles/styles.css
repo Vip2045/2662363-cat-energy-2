@@ -60,8 +60,8 @@ body {
 }
 @media (min-width: 768px) {
   .header__logo {
-    top: 12px;
-    left: 15px;
+    top: 25px;
+    left: 29px;
   }
 }
 
@@ -122,7 +122,7 @@ body {
   .main-nav__list {
     border: none;
     display: flex;
-    gap: 20px;
+    gap: 35px;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -176,12 +176,21 @@ body {
 }
 @media (min-width: 768px) {
   .main-nav__link {
-    padding: 7px;
+    padding: 7px 0 0;
     font-size: 18px;
     line-height: 24px;
   }
 }
 
+@media (min-width: 768px) {
+  .main-nav__link--current {
+    border-bottom: 2px solid #68b738;
+    width: 64px;
+    height: 2px;
+    padding-bottom: 37px;
+    margin-left: 7px;
+  }
+}
 .promo {
   text-align: center;
   color: #ffffff;
@@ -272,6 +281,15 @@ body {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .programs__wrapper {
+    display: block;
+  }
+  .programs__item {
+    width: 708px;
+    height: 372px;
+  }
+}
 .programs__item {
   background-color: #f2f2f2;
   padding: 29px 20px 19px;
@@ -653,8 +671,8 @@ body {
 }
 
 .contacts__map {
-  width: 320px;
-  height: 362px;
+  width: 100%;
+  height: 100%;
   padding: 0;
 }
 
@@ -673,6 +691,18 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__logo {
+    display: flex;
+    margin: 20px 160px 0 15px;
+    padding: 0;
+  }
+}
 .social {
   margin: -14px 0 0;
   padding: 20px 0 14px;
@@ -700,11 +730,20 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .social {
+    border: none;
+  }
+  .social__list {
+    margin: 12px 0 0;
+    padding: 0;
+  }
+}
 .academy {
-  margin: 0 auto 0 0;
+  margin: 0 auto;
   padding: 20px 0 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .academy__link {
@@ -724,17 +763,49 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+  .academy {
+    display: flex;
+    align-items: center;
+    margin: 9px 0 0;
+    padding: 0;
+  }
+  .academy__link {
+    margin: 0;
+    padding: 0 23px 8px 125px;
+  }
+  .academy__link-icon {
+    margin: 0;
+    padding: 0;
+  }
+}
 .map {
   width: 100%;
   height: 362px;
+  position: relative;
 }
 
 .map__google {
   width: 100%;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .map__google iframe {
   width: 100%;
   height: 100%;
+}
+
+.map__images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 10;
+  background-image: image-set(url("../images/map/map-mobile@1x.jpg") 1x, url("../images/map/map-mobile@2x.jpg") 2x);
 }
