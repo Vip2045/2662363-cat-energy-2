@@ -1,8 +1,8 @@
 .academy {
-  margin: 0 auto 0 0;
+  margin: 0 auto;
   padding: 20px 0 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .academy__link {
@@ -20,4 +20,23 @@
   margin: 0;
   padding: 0 0 0 139px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .academy {
+    display: flex;
+    align-items: center;
+    margin: 9px 0 0;
+    padding: 0;
+  }
+
+  .academy__link {
+    margin: 0;
+    padding: 0 23px 8px 125px;
+  }
+
+  .academy__link-icon {
+    margin: 0;
+    padding: 0;
+  }
 }

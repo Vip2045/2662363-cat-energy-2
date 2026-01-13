@@ -9,6 +9,19 @@
   margin: 0;
 }
 
+@media (min-width: $tablet) {
+  .programs__wrapper {
+    display: block;
+  }
+
+  .programs__item {
+    width: 708px;
+    height: 372px;
+  }
+
+
+}
+
 .programs__item {
   background-color: #f2f2f2;
   padding: 29px 20px 19px;
@@ -16,6 +29,7 @@
   position: relative;
   box-sizing: border-box;
 }
+
 
 .programs__item:last-child {
   margin-bottom: 0;

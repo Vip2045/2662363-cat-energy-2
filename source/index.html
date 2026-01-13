@@ -2,9 +2,9 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Cat Energy</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -12,8 +12,8 @@
   <header class="header">
     <a class="header__logo" href="index.html">
       <picture>
-        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
-        <img src="./images/logo/logo-mobile.svg" width="33" height="38" alt="текст сайта Кэт Энерджи">
+        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg+xml" />
+        <img src="./images/logo/logo-mobile.svg" width="33" height="38" alt="текст сайта Кэт Энерджи" />
       </picture>
     </a>
 
@@ -22,8 +22,8 @@
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="index.html">
+        <li class="main-nav__item main-nav__link--current">
+          <a class="main-nav__link active" href="index.html">
             Главная
           </a>
         </li>
@@ -69,7 +69,6 @@
           </p>
           <a class="programs__link programs__link--pro" href="catalog-pro.html">Каталог pro</a>
         </li>
-
       </ul>
     </section>
 
@@ -125,12 +124,12 @@
         <ul class="slider__list">
           <li class="slider__screen slider__screen--before">
             <picture>
-              <img class="slider__image" src="./images/slider/before-m@1x.png" width="280" height="256" srcset="./images/slider/before-m@2x.png 2x" alt="Толстый кот">
+              <img class="slider__image" src="./images/slider/before-m@1x.png" width="280" height="256" srcset="./images/slider/before-m@2x.png 2x" alt="Толстый кот" />
             </picture>
           </li>
           <li class="slider__screen slider__screen--after">
             <picture>
-              <img class="slider__image" src="./images/slider/after-m@1x.png" srcset="./images/slider/after-m@2x.png 2x" width="280" height="256" alt="Худой кот">
+              <img class="slider__image" src="./images/slider/after-m@1x.png" srcset="./images/slider/after-m@2x.png 2x" width="280" height="256" alt="Худой кот" />
             </picture>
           </li>
         </ul>
@@ -155,31 +154,11 @@
         <div class="map__google">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197904!2d30.320472476885115!3d59.93871916209403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1766935053013!5m2!1sru!2sru" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
-
-      <noscript>
-        <div class="map__images">
-          <div class="error-script">Error</div>
-        </div>
-      </noscript>
-
-      <noscript>
-        <div class="map-nojs">
-          <!-- Альтернатива для пользователей без JS -->
-          <a href="https://maps.app.goo.gl/y1K79rpibcjrbiYE9" target="_blank" rel="noopener noreferrer">
-            <img src="images/footer/map-mobile.jpg" alt="Карта расположения магазина по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" width="640" height="362">
-          </a>
-          <p class="map-nojs__text">
-            Для интерактивной карты включите JavaScript или
-            <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3" target="_blank" rel="noopener noreferrer">
-              откройте карту в новом окне
-            </a>
-          </p>
-        </div>
-      </noscript>
-
-      <div class="contacts__map contacts__map--nojs">
-        <img class="contacts__map-image" src="./images/footer/map-mobile.jpg" width="320" height="362" srcset="./images/footer/map-mobile@2x.jpg 2x" alt="Местоположение магазина на карте">
+        <noscript>
+          <div class="map__images">
+            <div class="visually-hidden">Для интерактивной карты включите JavaScript или откройте карту в новом окне</div>
+          </div>
+        </noscript>
       </div>
 
     </section>
@@ -187,26 +166,26 @@
 
   <footer class="footer">
     <a class="footer__logo" href="#">
-      <img class="footer__logo-image" src="./images/footer/footer-logo.svg" width="128" height="24" alt="Логотип магазина">
+      <img class="footer__logo-image" src="./images/footer/footer-logo.svg" width="128" height="24" alt="Логотип магазина" />
     </a>
 
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в ВКонтакте">
-            <img class="social__icon" src="./images/footer/social-icon-vk.svg" width="28" height="22" alt="Иконка ВКонтакте">
+            <img class="social__icon" src="./images/social/social-icon-vk.svg" width="28" height="22" alt="Иконка ВКонтакте" />
             <span class="visually-hidden">Мы в ВКонтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" aria-label="Мы в YouTube">
-            <img class="social__icon" src="./images/footer/social-icon-youtube.svg" width="28" height="22" alt="Иконка YouTube">
+            <img class="social__icon" src="./images/social/social-icon-youtube.svg" width="28" height="22" alt="Иконка YouTube" />
             <span class="visually-hidden">Мы в YouTube</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Мы в Telegram">
-            <img class="social__icon" src="./images/footer/social-icon-telegram.svg" width="28" height="22" alt="Иконка Telegram">
+            <img class="social__icon" src="./images/social/social-icon-telegram.svg" width="28" height="22" alt="Иконка Telegram" />
             <span class="visually-hidden">Мы в Telegram</span>
           </a>
         </li>
@@ -217,8 +196,8 @@
       <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
       </a>
-      <a href="#" class="academy__link-icon">
-        <img class="academy__icon" src="./images/footer/logo-academy.svg" width="27" height="34" alt="иконка академии">
+      <a class="academy__link-icon">
+        <img class="academy__icon" src="./images/academy/logo-academy.svg" width="27" height="34" alt="иконка академии" />
       </a>
     </div>
   </footer>
