@@ -24,14 +24,3 @@
   padding: 0;
   text-decoration: none;
 }
-
-@media (min-width: $tablet) {
-  .social {
-    border: none;
-  }
-
-  .social__list {
-    margin: 12px 0 0;
-    padding: 0;
-  }
-}

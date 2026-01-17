@@ -2,7 +2,6 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    display: flex;
     padding-bottom: 20px;
   }
 }
@@ -23,7 +22,6 @@
     display: none;
   }
 }
-
 
 .main-nav--closed .main-nav__toggle {
   display: block;
@@ -50,11 +48,12 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
-    border: none;
+    margin: 0;
     display: flex;
-    gap: 35px;
-    justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 34px;
+    justify-content: flex-end;
+    border: none;
   }
 }
 
@@ -108,8 +107,8 @@
   }
 }
 
-@media (min-width: $tablet) {
-  .main-nav__link--current {
+.main-nav__link--current {
+  @media (min-width: $tablet) {
     border-bottom: 2px solid $thema;
     width: 64px;
     height: 2px;

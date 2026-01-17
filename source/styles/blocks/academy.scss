@@ -3,6 +3,12 @@
   padding: 20px 0 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 0 0 139px;
+    text-decoration: none;
+  }
 }
 
 .academy__link {
@@ -14,29 +20,4 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
-}
-
-.academy__link-icon {
-  margin: 0;
-  padding: 0 0 0 139px;
-  text-decoration: none;
-}
-
-@media (min-width: $tablet) {
-  .academy {
-    display: flex;
-    align-items: center;
-    margin: 9px 0 0;
-    padding: 0;
-  }
-
-  .academy__link {
-    margin: 0;
-    padding: 0 23px 8px 125px;
-  }
-
-  .academy__link-icon {
-    margin: 0;
-    padding: 0;
-  }
 }
