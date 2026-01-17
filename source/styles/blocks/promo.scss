@@ -6,8 +6,8 @@
     text-align: left;
     color: #000000;
     width: 709px;
-    margin: 0 auto;
-    padding: 38px 90px 526px;
+    margin: 0 auto 1px;
+    padding: 38px 91px 526px;
     box-sizing: border-box;
     position: relative;
 
@@ -18,8 +18,8 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background-image: url("../../images/promo/promo-can-tablet@1x.jpg")
-        no-repeat 0 0;
+      background: url("../../images/promo/promo-can-tablet@1x.jpg") no-repeat 0
+        0;
     }
   }
 }
@@ -44,7 +44,9 @@
   @media (min-width: $tablet) {
     padding-bottom: 0;
     margin-bottom: 0;
-    display: none;
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -70,6 +72,7 @@
     background: none;
     padding: 0;
     margin: 0 0 50px;
+
     &::before {
       display: none;
     }
@@ -88,7 +91,7 @@
   z-index: 10;
 
   @media (min-width: $tablet) {
-    margin: 0 0 39px;
+    margin: 0 0 40px 0;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -108,7 +111,7 @@
   z-index: 10;
 
   @media (min-width: $tablet) {
-    margin: 0;
+    margin: 0 0 0 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -132,7 +135,7 @@
   @media (min-width: $tablet) {
     display: inline-block;
     margin: 0;
-    padding: 15px 28px 13px;
+    padding: 14px 27px 13px;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
