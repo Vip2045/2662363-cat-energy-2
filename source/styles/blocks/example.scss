@@ -1,18 +1,31 @@
 .example {
-  margin: 9px auto 0 0;
-  padding: 143px 0 40px;
+  margin: 8px 0 0 0;
+  padding: 160px 0 22px;
   background-color: #eaeaea;
   box-sizing: border-box;
+  @media (min-width: $tablet) {
+    margin: 45px auto 0 0;
+    padding: 0 0 0 0;
+    background-color: #ffffff;
+  }
 }
 
 .example__title {
-  margin: -118px 0 0 20px;
+  margin: -135px 0 0 20px;
   padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+
+  @media (min-width: $tablet) {
+    margin: 24px 0 0 30px;
+    padding: 0 0 0 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }
 
 .example__text {
@@ -23,27 +36,59 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  @media (min-width: $tablet) {
+    width: 708px;
+    margin: 61px 0 0 30px;
+    padding: 0 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .example-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 53px auto;
+    height: 77px;
+    padding: 0 30px;
+  }
 }
 
 .example-list {
   margin: 0 auto 6px;
-  padding: 55px 20px 14px;
+  padding: 55px 20px 0 20px;
   list-style: none;
   display: flex;
   flex-wrap: nowrap;
   gap: 32px;
   justify-content: space-between;
+  @media (min-width: $tablet) {
+    margin: 53px auto;
+    padding: 0;
+  }
 }
 
 .example-list__item {
-  flex: 1;
-  height: 57px;
+  width: 162px;
+  height: 56px;
+  margin: -35px 0 0 0;
+  padding: 15px 20px 7px 19px;
   text-align: center;
   border-radius: 3px;
-  margin: -36px 0 0;
-  padding: 15px 20px;
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
+  @media (min-width: $tablet) {
+    margin: 0 49px 0 -37px;
+    padding: 0 0 0 0;
+    height: 72px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+  }
 }
 
 .example-list__value {
@@ -53,11 +98,18 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+  @media (min-width: $tablet) {
+    margin: 15px 0 0 0;
+    padding: 0 0 0 0;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example-list__label {
-  display: block;
-  padding: 6px 3px 0 1px;
+  width: auto;
+  display: inline-block;
+  padding: 5px 10px;
   background-color: #eaeaea;
   font-family: $lato;
   font-weight: 400;
@@ -65,6 +117,15 @@
   line-height: 12px;
   text-align: center;
   color: #444444;
+  @media (min-width: $tablet) {
+    width: 130px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }
 
 .example__costs,
@@ -78,4 +139,15 @@
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 172px;
+    margin: 0 1px 0 83px;
+    padding: 0 0 0 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

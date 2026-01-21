@@ -5,12 +5,16 @@
   background-repeat: no-repeat;
   background-size: 101px 18px;
   position: relative;
+  border-bottom: 1px solid #d9d9d9;
+  width: 320px; 
 
   @media (min-width: $tablet) {
-    padding: 32px 35px 10px 290px;
+    margin: 0 27px 22px 0;
+    padding: 33px 35px 10px 290px;
     background: none;
-    min-height: 80px;
+    height: 80px;
     box-sizing: border-box;
+    border-bottom: none;
   }
 }
 
@@ -20,6 +24,7 @@
   left: 19px;
 
   @media (min-width: $tablet) {
+    display: block;
     top: 25px;
     left: 29px;
   }

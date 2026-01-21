@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Cat Energy</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body class="page__body">
@@ -16,12 +16,14 @@
             srcset="./images/logo/logo-tablet.svg"
             width="174"
             height="50"
-            type="image/svg+xml">
+            type="image/svg+xml"
+          />
           <img
             src="./images/logo/logo-mobile.svg"
             width="33"
             height="38"
-            alt="текст сайта Кэт Энерджи">
+            alt="текст сайта Кэт Энерджи"
+          />
         </picture>
       </a>
 
@@ -32,15 +34,17 @@
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a
-              class="main-nav__link main-nav__link--current active"
+              class="main-nav__link main-nav__link--current"
               href="index.html"
+              aria-current="page"
+              >Главная</a
             >
-              Главная
-            </a>
           </li>
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
+
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
@@ -118,7 +122,7 @@
 
           <li class="guide__item guide__item--scales">
             <span class="guide__description"
-              >Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего
+              >Уже через месяц наслаждайтесь изменениями к лучшему &nbsp;вашего
               питомца!</span
             >
           </li>
@@ -133,51 +137,81 @@
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
 
-        <ul class="example-list">
-          <li class="example-list__item">
-            <span class="example-list__value">5 КГ</span>
-            <span class="example-list__label">снижение веса</span>
-          </li>
-
-          <li class="example-list__item">
-            <span class="example-list__value">60 ДНЕЙ</span>
-            <span class="example-list__label">затрачено времени</span>
-          </li>
-        </ul>
-        <p class="example__costs">
-          Затраты на питание: <span class="example__price">15 000 РУБ.</span>
-        </p>
-
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__screen slider__screen--before">
-              <picture>
-                <img
-                  class="slider__image"
-                  src="./images/slider/before-m@1x.png"
-                  width="280"
-                  height="256"
-                  srcset="./images/slider/before-m@2x.png 2x"
-                  alt="Толстый кот">
-              </picture>
+        <div class="example-wrapper">
+          <ul class="example-list">
+            <li class="example-list__item">
+              <span class="example-list__value">5 КГ</span>
+              <span class="example-list__label">снижение веса</span>
             </li>
-            <li class="slider__screen slider__screen--after">
-              <picture>
-                <img
-                  class="slider__image"
-                  src="./images/slider/after-m@1x.png"
-                  srcset="./images/slider/after-m@2x.png 2x"
-                  width="280"
-                  height="256"
-                  alt="Худой кот">
-              </picture>
+            <li class="example-list__item">
+              <span class="example-list__value">60 ДНЕЙ</span>
+              <span class="example-list__label">затрачено времени</span>
             </li>
           </ul>
-          <button class="slider__control" type="button">
-            <span class="visually-hidden">Переключить состояние слайдера</span>
-          </button>
+          <p class="example__costs">
+            Затраты на питание:
+            <span class="example__price">15 000 РУБ.</span>
+          </p>
         </div>
       </section>
+
+      <div class="slider">
+        <div class="slider__bg"></div>
+        <ul class="slider__list">
+          <li class="slider__screen slider__screen--before">
+            <picture>
+              <!-- Планшеты (768px - 1199px) -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/slider/before-t@1x.png 1x,
+                  ./images/slider/before-t@2x.png 2x
+                "
+                width="560"
+                height="512"
+              />
+
+              <!-- Мобильные -->
+              <img
+                class="slider__image"
+                src="./images/slider/before-m@1x.png"
+                srcset="./images/slider/before-m@2x.png 2x"
+                width="280"
+                height="256"
+                alt="Толстый кот"
+              />
+            </picture>
+          </li>
+
+          <li class="slider__screen slider__screen--after">
+            <picture>
+              <!-- Планшеты (768px - 1199px) -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/slider/after-t@1x.png 1x,
+                  ./images/slider/after-t@2x.png 2x
+                "
+                width="560"
+                height="512"
+              />
+
+              <!-- Мобильные -->
+              <img
+                class="slider__image"
+                src="./images/slider/after-m@1x.png"
+                srcset="./images/slider/after-m@2x.png 2x"
+                width="280"
+                height="256"
+                alt="Худой кот"
+              />
+            </picture>
+          </li>
+        </ul>
+        <button class="slider__control" type="button">
+          <span class="visually-hidden">Переключить состояние слайдера</span>
+        </button>
+      </div>
 
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -186,7 +220,8 @@
             Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <address class="contacts__address">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8
+            <span class="line-spacing">Санкт-Петербург</span>
           </address>
         </div>
 
@@ -199,7 +234,8 @@
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <noscript>
             <div class="map__images">
@@ -220,7 +256,8 @@
           src="./images/footer/footer-logo.svg"
           width="128"
           height="24"
-          alt="Логотип магазина">
+          alt="Логотип магазина"
+        />
       </a>
 
       <div class="social">
@@ -229,13 +266,15 @@
             <a
               class="social__link social__link--vk"
               href="https://vk.com/htmlacademy"
-              aria-label="Мы в ВКонтакте">
+              aria-label="Мы в ВКонтакте"
+            >
               <img
                 class="social__icon"
                 src="./images/social/social-icon-vk.svg"
                 width="28"
                 height="22"
-                alt="Иконка ВКонтакте">
+                alt="Иконка ВКонтакте"
+              />
 
               <span class="visually-hidden">Мы в ВКонтакте</span>
             </a>
@@ -251,7 +290,8 @@
                 src="./images/social/social-icon-youtube.svg"
                 width="28"
                 height="22"
-                alt="Иконка YouTube">
+                alt="Иконка YouTube"
+              />
               <span class="visually-hidden">Мы в YouTube</span>
             </a>
           </li>
@@ -259,13 +299,15 @@
             <a
               class="social__link social__link--telegram"
               href="https://t.me/htmlacademy"
-              aria-label="Мы в Telegram">
+              aria-label="Мы в Telegram"
+            >
               <img
                 class="social__icon"
                 src="./images/social/social-icon-telegram.svg"
                 width="28"
                 height="22"
-                alt="Иконка Telegram">
+                alt="Иконка Telegram"
+              />
               <span class="visually-hidden">Мы в Telegram</span>
             </a>
           </li>
@@ -275,7 +317,8 @@
       <div class="academy">
         <a
           class="academy__link"
-          href="https://htmlacademy.ru/intensive/adaptive">
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
           HTML Academy
         </a>
         <a class="academy__link-icon" href="#">
@@ -284,7 +327,8 @@
             src="./images/academy/logo-academy.svg"
             width="27"
             height="34"
-            alt="иконка академии">
+            alt="иконка академии"
+          />
         </a>
       </div>
     </footer>

@@ -1,12 +1,11 @@
 .academy {
-  margin: 0 auto;
-  padding: 20px 0 0;
   display: flex;
   justify-content: space-between;
-
+  margin: 0 auto;
+  padding: 20px 0 0;
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0 0 0 139px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 211px;
     text-decoration: none;
   }
 }
@@ -20,4 +19,19 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  @media (min-width: $tablet) {
+    display: block;
+    width: 140px;
+    margin: 7px 3px 0 -34px;
+    padding: 0 0 0 0;
+  }
+}
+
+.academy__link-icon {
+  @media (min-width: $tablet) {
+    display: block;
+    margin: 0 0 0 6px;
+    padding: 0 0 0 0;
+    text-decoration: none;
+  }
 }

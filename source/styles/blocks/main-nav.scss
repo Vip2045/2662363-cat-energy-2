@@ -48,12 +48,14 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
-    margin: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 444px;
     display: flex;
     flex-wrap: wrap;
-    gap: 34px;
     justify-content: flex-end;
     border: none;
+    gap: 34px;
   }
 }
 
@@ -101,6 +103,7 @@
   padding: 22px 5px 23px;
 
   @media (min-width: $tablet) {
+    margin: 0 0 0 0;
     padding: 7px 0 0;
     font-size: 18px;
     line-height: 24px;
@@ -112,7 +115,6 @@
     border-bottom: 2px solid $thema;
     width: 64px;
     height: 2px;
-    padding-bottom: 30px;
-    margin-left: 7px;
+    padding-bottom: 31px;
   }
 }
