@@ -1,27 +1,28 @@
 .example {
-  margin: 8px 0 0 0;
-  padding: 160px 0 22px;
+  margin: 0;
+  padding: 0 20px 40px 20px;
   background-color: #eaeaea;
-  box-sizing: border-box;
   @media (min-width: $tablet) {
-    margin: 45px auto 0 0;
+    margin: 0;
     padding: 0 0 0 0;
     background-color: #ffffff;
   }
 }
 
 .example__title {
-  margin: -135px 0 0 20px;
-  padding: 0;
+  width: auto;
+  margin: 0;
+  padding: 25px 0 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
+  text-align: left;
 
   @media (min-width: $tablet) {
-    margin: 24px 0 0 30px;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0 0 60px 30px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -30,7 +31,7 @@
 
 .example__text {
   margin: 0;
-  padding: 40px 17px 0 20px;
+  padding: 40px 0 6px 0;
   font-family: $lato;
   font-weight: 400;
   font-size: 14px;
@@ -38,100 +39,104 @@
   color: #444444;
   @media (min-width: $tablet) {
     width: 708px;
-    margin: 61px 0 0 30px;
-    padding: 0 0 0 0;
+    margin: 0 0 56px 30px;
+    padding: 0;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
 }
 
-@media (min-width: $tablet) {
-  .example-wrapper {
+.example__wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0 0 104px 0;
     display: flex;
     align-items: center;
-    margin: 53px auto;
-    height: 77px;
-    padding: 0 30px;
+    justify-content: center;
   }
 }
 
-.example-list {
-  margin: 0 auto 6px;
-  padding: 55px 20px 0 20px;
+.example__list {
+  width: 280px;
+  margin: 0;
+  padding: 0 0 2px 0;
   list-style: none;
   display: flex;
-  flex-wrap: nowrap;
   gap: 32px;
-  justify-content: space-between;
   @media (min-width: $tablet) {
-    margin: 53px auto;
-    padding: 0;
+    width: 708px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 30px;
+    display: flex;
+    gap: 32px;
   }
 }
 
-.example-list__item {
-  width: 162px;
+.example__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
   height: 56px;
-  margin: -35px 0 0 0;
-  padding: 15px 20px 7px 19px;
-  text-align: center;
   border-radius: 3px;
+  margin: 14px 0 0 0;
+  padding: 14px 0 0 0;
   border: 1px solid #cdcdcd;
-  box-sizing: border-box;
   @media (min-width: $tablet) {
-    margin: 0 49px 0 -37px;
+    width: 162px;
+    height: 71px;
+    border-radius: 3px;
+    margin: 0 11px 0 0;
     padding: 0 0 0 0;
-    height: 72px;
-    border: 1px solid #cdcdcd;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    white-space: nowrap;
+    border: 1px solid #cdcdcd;
   }
 }
 
-.example-list__value {
+.example__value {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
   color: #000000;
   @media (min-width: $tablet) {
-    margin: 15px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    padding: 14px 0 11px 0;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
-.example-list__label {
-  width: auto;
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #eaeaea;
+.example__label {
+  margin: 0 0 0 0;
+  padding: 8px 2px 0 0;
+  width: 70px;
   font-family: $lato;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   color: #444444;
+  background-color: #eaeaea;
   @media (min-width: $tablet) {
-    width: 130px;
-    margin: 10px 0 0 0;
+    width: 125px;
+    margin: 0 0 0 0;
     padding: 0 0 0 0;
-    font-weight: 400;
     font-size: 14px;
+    font-style: normal;
     line-height: 14px;
     background-color: #ffffff;
   }
 }
-
 .example__costs,
 .example__price {
-  margin: 34px 0 0;
-  padding: 0;
+  margin: 32px 0 20px 0;
+  padding: 0 0 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
@@ -140,14 +145,33 @@
   text-align: center;
   color: #000000;
   @media (min-width: $tablet) {
+    width: 172px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 172px;
-    margin: 0 1px 0 83px;
+    gap: 9px;
+    margin: 0 31px 0 0;
     padding: 0 0 0 0;
     font-size: 20px;
     line-height: 20px;
+    text-align: right;
+  }
+}
+
+.example__slider {
+  @media (min-width: $tablet) {
+    background-color: #eaeaea;
+    position: relative;
+    margin: 0;
+    padding: 0 0 103px 0;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 151px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
