@@ -1,0 +1,38 @@
+.academy {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+}
+
+.academy__link {
+  margin: 27px 0 0 20px;
+  padding: 0 0 0 0;
+  text-decoration: none;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  @media (min-width: $tablet) {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 8px 22px 0 126px;
+  }
+}
+
+.academy__link-icon {
+  margin: 20px 20px 0 0;
+  padding: 0 0 0 0;
+  @media (min-width: $tablet) {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-decoration: none;
+  }
+}
