@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
-  <body class="page__body">
+  <body class="page__body page__body--index">
     <header class="header">
       <a class="header__logo" href="index.html">
         <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/logo/logo-desktop.svg"
+            width="202"
+            height="59"
+            type="image/svg+xml"
+          />
           <source
             media="(min-width:768px)"
             srcset="./images/logo/logo-tablet.svg"
@@ -27,7 +34,7 @@
         </picture>
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--index">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
@@ -54,13 +61,15 @@
 
     <main class="main-container">
       <section class="promo">
-        <div class="promo__container">
-          <div class="promo__wrapper">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <div class="promo__block">
+          <div class="promo__container">
+            <div class="promo__wrapper">
+              <h1 class="promo__title">Функциональное питание для котов</h1>
+              <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            </div>
           </div>
+          <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
-        <a class="promo__link button" href="form.html">Подобрать программу</a>
       </section>
 
       <section class="programs">
@@ -131,27 +140,31 @@
 
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-
-        <div class="example__wrapper">
-          <ul class="example__list">
-            <li class="example__item">
-              <span class="example__value">5 КГ</span>
-              <span class="example__label">снижение веса</span>
-            </li>
-            <li class="example__item">
-              <span class="example__value">60 ДНЕЙ</span>
-              <span class="example__label">затрачено времени</span>
-            </li>
-          </ul>
-          <p class="example__costs">
-            Затраты на питание:
-            <span class="example__price">15 000 РУБ.</span>
+        <div class="example__block">
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
           </p>
+
+          <div class="example__wrapper">
+            <ul class="example__list">
+              <li class="example__item">
+                <span class="example__value">5 КГ</span>
+                <span class="example__label">снижение веса</span>
+              </li>
+              <li class="example__item">
+                <span class="example__value">60 ДНЕЙ</span>
+                <span class="example__label">затрачено времени</span>
+              </li>
+            </ul>
+
+            <p class="example__costs">
+              Затраты на питание:
+              <span class="example__price">15 000 РУБ.</span>
+            </p>
+          </div>
         </div>
 
         <div class="example__slider">
@@ -229,6 +242,17 @@
         </div>
 
         <div class="map">
+          <div class="map__container">
+            <div class="map__wrapper">
+            <p class="map__lead">
+            Приглашаем к&nbsp;сотрудничеству дилеров!
+          </p>
+          <address class="map__address">
+            ул. Большая Конюшенная, д. 19/8
+            <span class="line-spacing">Санкт-Петербург</span>
+          </address>
+          </div>
+          </div>
           <div class="map__google">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197904!2d30.320472476885115!3d59.93871916209403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1766935053013!5m2!1sru!2sru"

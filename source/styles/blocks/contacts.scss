@@ -2,7 +2,12 @@
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
+
   @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+  }
+   @media (min-width: $desktop) {
     margin: 0;
     padding: 0;
   }
@@ -17,10 +22,14 @@
   @media (min-width: $tablet) {
     display: flex;
     align-items: center;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 70px 0 70px;
     justify-content: space-between;
     height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
 
@@ -37,7 +46,7 @@
   @media (min-width: $tablet) {
     display: block;
     width: 163px;
-    margin: 0 0 3px 0;
+    margin: 0 0 0 0;
     padding: 0;
     font-size: 20px;
     line-height: 26px;
@@ -47,7 +56,7 @@
 .contacts__address {
   width: 140px;
   margin: 25px 20px 0 0;
-  padding: 0 0 0 0;
+  padding: 0;
   font-family: $lato;
   font-weight: 400;
   font-size: 14px;
@@ -56,8 +65,8 @@
   font-style: normal;
   @media (min-width: $tablet) {
     width: 157px;
-    margin: -3px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 20px;
     text-align: right;

@@ -5,6 +5,7 @@
   padding: 0;
   position: relative;
   background-color: #eaeaea;
+
   @media (min-width: $tablet) {
     width: 560px;
     height: 512px;
@@ -15,10 +16,20 @@
     z-index: 5;
     background-color: #eaeaea;
   }
+
+  @media (min-width: $desktop) {
+    width: 560px;
+    height: 512px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 5;
+    background-color: #eaeaea;
+  }
 }
 
 .slider__list {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 20px 20px 40px 20px;
   list-style: none;
   width: 100%;
@@ -34,6 +45,7 @@
   left: 0;
   background-color: #eaeaea;
   overflow: hidden;
+
   @media (min-width: $tablet) {
     background-color: #eaeaea;
 

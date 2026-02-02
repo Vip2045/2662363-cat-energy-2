@@ -1,4 +1,5 @@
 .map {
+  display: block;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -6,10 +7,72 @@
   position: relative;
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0;
     width: 100%;
     height: 400px;
     position: relative;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.map__container {
+  display: none;
+  @media (min-width: $desktop) {
+    margin: 103px 765px 106px 111px;
+    padding: 0;
+    width: 565px;
+    height: 199px;
+    background-color: #ffffff;
+    display: none;
+  }
+}
+
+.map__wrapper {
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin: 0;
+    padding: 60px 80px 0 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.map__lead {
+  @media (min-width: $desktop) {
+    width: 163px;
+    margin: 0;
+    padding: 0;
+    font-family: $oswald;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #111111;
+  }
+}
+
+.map__address {
+  @media (min-width: $desktop) {
+    width: 157px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    font-style: normal;
+    .line-spacing {
+      display: inline-block;
+      padding-top: 20px;
+    }
   }
 }
 

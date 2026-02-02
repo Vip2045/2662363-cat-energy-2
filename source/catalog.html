@@ -8,9 +8,16 @@
   </head>
 
   <body class="page__body">
-    <header class="header">
+     <header class="header">
       <a class="header__logo" href="index.html">
         <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/logo/logo-desktop.svg"
+            width="202"
+            height="59"
+            type="image/svg+xml"
+          />
           <source
             media="(min-width:768px)"
             srcset="./images/logo/logo-tablet.svg"
@@ -27,22 +34,22 @@
         </picture>
       </a>
 
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--catalog">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a
+              class="main-nav__link"
+              href="index.html"
+              aria-current="page"
+              >Главная</a
+            >
           </li>
 
           <li class="main-nav__item">
-            <a
-              class="main-nav__link main-nav__link--current"
-              href="catalog.html"
-              aria-current="page"
-              >Каталог продукции</a
-            >
+            <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
           </li>
 
           <li class="main-nav__item">
@@ -86,14 +93,14 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">700 ₽</span>
+                  <span class="card__value">700 ₽</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <a class="button__link" href="#program.html">
-            <button class="card__button button button--primary" type="button">
+          <a class="button__link" href="./program.html">
+            <button class="card__button button button--primary" type="submit">
               Заказать
             </button>
           </a>
@@ -128,7 +135,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">1000 ₽</span>
+                  <span class="card__value">1000 ₽</span>
                 </li>
               </ul>
             </div>
@@ -170,7 +177,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">700 ₽</span>
+                  <span class="card__value">700 ₽</span>
                 </li>
               </ul>
             </div>
@@ -212,7 +219,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">1000 ₽</span>
+                  <span class="card__value">1000 ₽</span>
                 </li>
               </ul>
             </div>
@@ -254,7 +261,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">400 ₽</span>
+                  <span class="card__value">400 ₽</span>
                 </li>
               </ul>
             </div>
@@ -296,7 +303,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">700 ₽</span>
+                  <span class="card__value">700 ₽</span>
                 </li>
               </ul>
             </div>
@@ -338,7 +345,7 @@
 
                 <li class="card__item">
                   <span class="card__label">Цена</span>
-                  <span class="card__value card__value_accent">500 ₽</span>
+                  <span class="card__value">500 ₽</span>
                 </li>
               </ul>
             </div>
@@ -384,6 +391,7 @@
             </button>
           </a>
         </div>
+        
         </div>
       </section>
 

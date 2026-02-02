@@ -1,10 +1,10 @@
 .header {
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 65px 0 0 0;
   background-image: url("../../images/logo/logo-text.svg");
-  background-position: 50% 25px;
+  background-position: 50% 23px;
   background-repeat: no-repeat;
-  background-size: 101px 18px;
+  background-size: 101px 19px;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
 
@@ -17,32 +17,26 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto 16px;
+    padding: 76px 0 0 630px;
+    width: 1220px;
+    min-height: 116px;
+    z-index: 10;
   }
-
+}
   .header__logo {
     position: absolute;
-    width: 33px;
-    height: 38px;
-    display: block;
     top: 13px;
     left: 20px;
 
     @media (min-width: $tablet) {
-      display: block;
-      width: 60px;
-      height: 50px;
       top: 25px;
       left: 29px;
     }
 
     @media (min-width: $desktop) {
-      display: block;
-      width: 70px;
-      height: 59px;
-      top: 25px;
-      left: 29px;
+      top: 55px;
+      left: 0;
     }
   }
-}
+
