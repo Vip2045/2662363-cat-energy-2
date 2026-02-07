@@ -1,48 +1,51 @@
-.card__addition {
-  margin: 0 auto;
-  padding: 20px 20px 58px 20px;
-  width: 100%;
-  border: 1px solid #ebebeb;
+.card-add {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px 20px;
+  height: 209px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
 }
 
-.card__addition-container {
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.card__add-container {
+  width: 219px;
   margin: 0 auto;
   padding: 0 0 20px 0;
-}
-
-.card__addition-link {
-  display: block;
-  text-decoration: none;
-}
-
-.card__addition-image {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 0 0 23px 0;
-  padding: 0 0 0 0;
-  object-fit: cover;
-}
-
-.card__addition-desc {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.card__add-link {
+  text-decoration: none;
+  display: block;
+}
+
+.card__add-image {
+  display: block;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin-bottom: 23px;
+}
+
+.card__add-desc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 9px;
 }
 
-.card__addition-title {
+.card__add-title {
+  margin: 0;
+  padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -52,7 +55,10 @@
   color: #111111;
 }
 
-.card__addition-text {
+.card__add-text {
+  margin: 0;
+  padding: 0;
+  width: 219px;
   font-family: $lato;
   font-weight: 400;
   font-size: 12px;
@@ -61,26 +67,26 @@
   color: #444444;
 }
 
-.card__addition-button {
-  width: 100%;
-  margin: 0;
+.card__add-button__link {
+  text-decoration: none;
+  display: block;
+}
+
+.card__add-button {
+  margin: 0 auto;
   padding: 10px 94px 10px 94px;
+  display: inline-block;
+  width: 100%;
   border: none;
-  outline: none;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  color: #444444;
   cursor: pointer;
-  transition: all 0.4s ease-in;
-  box-sizing: border-box;
-}
-
-.addition-button__link {
-  width: 100%;
-  list-style: none;
+  transition: background-color 0.4s ease;
   text-decoration: none;
 }
 
@@ -89,12 +95,11 @@
   background-color: $thema-basic-grey;
 }
 
-.card__addition-button:hover {
+.button--secondary:hover {
   background-color: #ebebeb;
 }
 
-.card__addition-button:active {
+.button--secondary:active {
   background-color: #ebebeb;
-  font-size: 20px;
-  color: #646464;
+  color: #444444;
 }

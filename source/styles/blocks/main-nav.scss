@@ -135,7 +135,7 @@
 .main-nav__link--current {
   @media (min-width: $tablet) {
     text-decoration: underline solid $thema 2px;
-    text-underline-offset: 11px;
+    text-underline-offset: 10px;
   }
 
   @media (min-width: $desktop) {

@@ -1,15 +1,16 @@
 .header {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 65px 0 0 0;
   background-image: url("../../images/logo/logo-text.svg");
   background-position: 50% 23px;
   background-repeat: no-repeat;
-  background-size: 101px 19px;
+  background-size: 101px 20px;
   position: relative;
   border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    margin: 0 0 23px 0;
+    margin: 0 0 22px 0;
     padding: 33px 34px 10px 290px;
     background: none;
     box-sizing: border-box;
@@ -24,19 +25,22 @@
     z-index: 10;
   }
 }
-  .header__logo {
-    position: absolute;
-    top: 13px;
-    left: 20px;
+.header__logo {
+  width: 33px;
+  height: 38px;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  display: block;
+  flex-shrink: 0;
 
-    @media (min-width: $tablet) {
-      top: 25px;
-      left: 29px;
-    }
-
-    @media (min-width: $desktop) {
-      top: 55px;
-      left: 0;
-    }
+  @media (min-width: $tablet) {
+    top: 25px;
+    left: 29px;
   }
 
+  @media (min-width: $desktop) {
+    top: 55px;
+    left: 0;
+  }
+}
