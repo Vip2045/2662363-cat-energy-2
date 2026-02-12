@@ -5,6 +5,12 @@
   padding: 0;
   position: relative;
   width: 100%;
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 16px 38px 14px;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .additional-card__top-line {
@@ -12,6 +18,9 @@
   height: 1px;
   background-color: #cdcdcd;
   margin: 0 0 13px 0;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .additional-card__bottom-line {
@@ -19,6 +28,9 @@
   height: 1px;
   background-color: #cdcdcd;
   margin: 0 0 13px 0;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .additional-card__content {
@@ -27,8 +39,29 @@
   width: 280px;
   display: flex;
   flex-direction: column;
+  @media (min-width: $tablet) {
+    margin: 10px 1px 0 0;
+    padding: 0;
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
+.additional-card__row {
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 0 0 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
 .additional-card__title {
   margin: 0;
   padding: 0 0 13px 0;
@@ -39,6 +72,13 @@
   text-transform: uppercase;
   text-align: left;
   color: #222222;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 7px 1px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-card__desc {
@@ -46,6 +86,15 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border: 1px solid black;
+  }
 }
 
 .additional-card__weight,
@@ -58,6 +107,12 @@
   line-height: 14px;
   text-align: center;
   color: #444444;
+  @media (min-width: $tablet) {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional__link {
@@ -81,6 +136,15 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 10px 285px 10px 285px;
+    display: inline-block;
+    width: 632px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button--primary {
@@ -96,5 +160,3 @@
   background-color: #5eaa2f;
   color: #8ec36d;
 }
-
-

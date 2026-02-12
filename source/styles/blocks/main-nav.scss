@@ -5,9 +5,11 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 20px;
+    padding: 8px 0 0 0;
   }
 
   @media (min-width: $desktop) {
+    margin: 9px 1px 0 0;
     padding: 0;
   }
 }
@@ -54,7 +56,7 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet) {
-    margin: 0 auto;
+    margin: -9px auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
@@ -135,7 +137,7 @@
 .main-nav__link--current {
   @media (min-width: $tablet) {
     text-decoration: underline solid $thema 2px;
-    text-underline-offset: 10px;
+    text-underline-offset: 11px;
   }
 
   @media (min-width: $desktop) {

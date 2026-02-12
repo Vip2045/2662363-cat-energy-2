@@ -20,11 +20,13 @@
   padding: 0;
 
   @media (min-width: $desktop) {
-    margin: 0;
-    padding: 0 110px 0 110px;
+    margin: 0 auto;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 80px;
+    width: 1220px;
+    flex-wrap: wrap;
   }
 }
 
@@ -176,8 +178,9 @@
 
   @media (min-width: $desktop) {
     margin: 0 0 0 0;
-    padding: 77px 0 73px 211px;
+    padding: 77px 0 73px 214px;
     font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -203,7 +206,7 @@
 
   @media (min-width: $desktop) {
     margin: 0 0 0 0;
-    padding: 0 52px 34px 50px;
+    padding: 0 52px 34px;
     width: auto;
     font-size: 16px;
     border-bottom: none;
@@ -230,13 +233,11 @@
     font-weight: 400;
     font-size: 20px;
     text-align: center;
-    position: relative;
   }
 
   @media (min-width: $desktop) {
-    margin: 0;
-    padding: 0 0 0 51px;
-    position: relative;
+    margin: 0 0 0 53px;
+    padding: 0;
   }
 }
 
@@ -247,7 +248,7 @@
   margin: 2px 0 0 16px;
   padding: 0;
   width: 32px;
-  height: 11px;
+  height: 10px;
   background: url("../../icons/stack.svg#icon-arrow") no-repeat 0 0;
   position: absolute;
 
@@ -257,7 +258,7 @@
   }
 
   @media (min-width: $desktop) {
-    left: 165px;
+    left: 114px;
     top: 1px;
   }
 }

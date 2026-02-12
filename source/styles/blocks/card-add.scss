@@ -9,6 +9,18 @@
   border-bottom: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    margin: 99px auto;
+    padding: 0 0 426px 0;
+    width: 324px;
+    display: flex;
+    position: relative;
+    z-index: 5;
+    border-top: none;
+    border-bottom: none;
+    border: 2px solid #f2f2f2;
+  }
 }
 
 .card__add-container {
@@ -19,6 +31,11 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+
+    @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 0 0 19px 0;
+  }
 }
 
 .card__add-link {
@@ -33,6 +50,12 @@
   height: 30px;
   object-fit: cover;
   margin-bottom: 23px;
+  @media (min-width: $tablet) {
+    margin: 50px 0 49px 0;
+    padding: 0 0 0 0;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .card__add-desc {
@@ -41,6 +64,10 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 9px;
+  @media (min-width: $tablet) {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
 }
 
 .card__add-title {
@@ -53,6 +80,13 @@
   text-transform: uppercase;
   text-align: center;
   color: #111111;
+  @media (min-width: $tablet) {
+    margin: 0 0 14px 0;
+    padding: 0;
+    width: 134px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__add-text {
@@ -65,6 +99,14 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 64px 0;
+    padding: 0;
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .card__add-button__link {
@@ -88,6 +130,13 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
+
+   @media (min-width: $tablet) {
+    margin: 0 0 0 36px;
+    padding: 8px 0 10px 0;
+    width: 250px;
+   
+  }
 }
 
 .button--secondary {

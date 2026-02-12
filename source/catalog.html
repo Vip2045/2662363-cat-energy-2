@@ -10,48 +10,92 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo" href="index.html">
-      <picture>
-        <source media="(min-width:1440px)" srcset="./images/logo/logo-desktop.svg" width="202" height="59" type="image/svg+xml" />
-        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg+xml" />
-        <img src="./images/logo/logo-mobile.svg" width="33" height="38" alt="текст сайта Кэт Энерджи" />
-      </picture>
-    </a>
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/logo/logo-desktop.svg"
+            width="202"
+            height="59"
+            type="image/svg+xml"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/logo/logo-tablet.svg"
+            width="174"
+            height="50"
+            type="image/svg+xml"
+          />
+          <img
+            src="./images/logo/logo-mobile.svg"
+            width="33"
+            height="38"
+            alt="текст сайта Кэт Энерджи"
+          />
+        </picture>
+      </a>
 
-    <nav class="main-nav main-nav--catalog">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html" aria-current="page">Главная</a>
-        </li>
+      <nav class="main-nav main-nav--index">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a
+              class="main-nav__link"
+              href="index.html"
+              aria-current="page"
+              >Главная</a
+            >
+          </li>
 
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
-        </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+          </li>
 
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
   <main class="main-container">
     <section class="product">
       <h1 class="product__title">Каталог продукции</h1>
       <h2 class="visually-hidden">Товары</h2>
       <div class="card__wrapper">
+
         <!--Карточка товара 1 -->
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="./program.html">
-              <img class="card__image" src="./images/product-card/product-card-1-m@2x.jpg" width="140" height="107" alt="Cat Energy PRO 500 г вкус курица" />
-            </a>
-            <div class="card__content">
-              <a class="card__link" href="./program.html">
+               
+          <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-1-d@2x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-1-t@2x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-1-m@2x.png"
+               width="140" height="107" alt="Cat Energy PRO 500 г вкус курица" />
+        </picture>
+
+           </a>
+        <div class="card__content">
+              <a class="card__link" href="#program.html">
                 <h2 class="card__title">Cat Energy PRO 500 г</h2>
+              </a>
               </a>
               <ul class="card__list">
                 <li class="card__item">
@@ -70,20 +114,42 @@
                 </li>
               </ul>
             </div>
-          </div>
+            </div>
+          
 
           <a class="card__link" href="./program.html">
             <button class="card__button button button--primary" type="submit">
               Заказать
             </button>
           </a>
+         
         </div>
 
         <!--Карточка товара 2 -->
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-2-m@2x.jpg" width="140" height="107" alt="Cat Energy PRO 1000 г вкус курица" />
+              
+              <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-2-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-2-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-2-m@2x.png"
+               width="140" height="107" alt="Cat Energy PRO 1000 г вкус курица" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -119,7 +185,27 @@
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-3-m@2x.jpg" width="140" height="107" alt="Cat Energy PRO 500 г вкус Рыба" />
+
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-3-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-3-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-3-m@2x.png"
+               width="140" height="107" alt="Cat Energy PRO 500 г вкус рыба" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -155,7 +241,27 @@
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-4-m@2x.jpg" width="140" height="107" alt="Cat Energy PRO 1000 г вкус Рыба" />
+
+              <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-4-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-4-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-4-m@2x.png"
+               width="140" height="107" alt="Cat Energy PRO 1000 г вкус рыба" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -191,7 +297,27 @@
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-5-m@2x.jpg" width="140" height="107" alt="Cat Energy SLIM 500 г вкус Гречка" />
+
+              <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-5-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-5-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-5-m@2x.png"
+               width="140" height="107" alt="Cat Energy SLIM 500 г вкус гречка" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -227,7 +353,27 @@
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-6-m@2x.jpg" width="140" height="107" alt="Cat Energy SLIM 1000 г вкус Гречка" />
+
+          <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-6-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-6-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-6-m@2x.png"
+               width="140" height="107" alt="Cat Energy SLIM 1000 г вкус гречка" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -263,7 +409,27 @@
         <div class="card">
           <div class="card__container">
             <a class="card__link" href="#program.html">
-              <img class="card__image" src="./images/product-card/product-card-7-m@2x.jpg" width="140" height="107" alt="Cat Energy SLIM 500 г вкус Рис" />
+
+    <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/product-card-7-d@1x.png"
+            width="169"
+            height="210"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/product-card-7-t@1x.png"
+            width="200"
+            height="210"
+            type="image/png"
+          />
+          <img class="card__image" 
+              src="./images/product-card/product-card-7-m@2x.png"
+               width="140" height="107" alt="Cat Energy SLIM 500 г вкус рис" />
+        </picture>
+
             </a>
             <div class="card__content">
               <a class="card__link" href="#program.html">
@@ -299,7 +465,27 @@
         <div class="card-add">
           <div class="card__add-container ">
             <a class="card__add-link" href="./program.html">
-              <img class="card__add-image" src="./images/product-card/plus-m@1x.jpg" width="30" height="30" alt="иконка добовления товара" />
+
+              <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="./images/product-card/plus-d@2x.png"
+            width="60"
+            height="60"
+            type="image/png"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./images/product-card/plus-t@2x.png"
+            width="60"
+            height="60"
+            type="image/png"
+          />
+          <img class="card__add-image" 
+              src="./images/product-card/plus-m@2x.png"
+               width="30" height="30" alt="plus-add-product" />
+        </picture>
+
             </a>
             <div class="card__add-desc">
               <a class="card__add-link" href="./program.html">
@@ -325,7 +511,9 @@
 
     <section class="additional-product">
       <div class="additional-product__container">
-        <h2 class="additional-product__title">Дополнительные товары</h2>
+        <h2 class="additional-product__title">
+          Дополнительные товары
+        </h2>
 
 
       <div class="additional__list">
@@ -333,13 +521,16 @@
         <div class="additional-card">
           <div class="additional-card__top-line"></div>
           <div class="additional-card__content">
+           <div class="additional-card__row">
             <h2 class="additional-card__title">САХАРОЗАМЕНИТЕЛЬ</h2>
             <div class="additional-card__desc">
               <span class="additional-card__weight">1 упаковка (100 г)</span>
               <span class="additional-card__price">200 ₽</span>
             </div>
+           </div>
+
             <a class="additional__link" href="./program.html">
-              <button class="additional__button button button--primary" type="submit">
+              <button class="additional__button button button--primary" type="button">
                 Заказать
               </button>
             </a>
@@ -350,13 +541,16 @@
         <div class="additional-card">
           <div class="additional-card__top-line"></div>
           <div class="additional-card__content">
+           <div class="additional-card__row">
             <h2 class="additional-card__title">питьевая вода</h2>
             <div class="additional-card__desc">
               <span class="additional-card__weight">5 литров</span>
               <span class="additional-card__price">50 ₽</span>
             </div>
+         </div>
+         
             <a class="additional__link" href="./program.html">
-              <button class="additional__button button button--primary" type="submit">
+              <button class="additional__button button button--primary"  type="button">
                 Заказать
               </button>
             </a>
@@ -367,13 +561,16 @@
         <div class="additional-card">
           <div class="additional-card__top-line"></div>
           <div class="additional-card__content">
+           <div class="additional-card__row">
             <h2 class="additional-card__title">молоко</h2>
             <div class="additional-card__desc">
               <span class="additional-card__weight">1 литр</span>
               <span class="additional-card__price">100 ₽</span>
             </div>
+          </div>
+
             <a class="additional__link" href="./program.html">
-              <button class="additional__button button button--primary" type="submit">
+              <button class="additional__button button button--primary"  type="button">
                 Заказать
               </button>
             </a>
@@ -384,18 +581,22 @@
         <div class="additional-card">
           <div class="additional-card__top-line"></div>
           <div class="additional-card__content">
+           <div class="additional-card__row">
             <h2 class="additional-card__title">витамины</h2>
             <div class="additional-card__desc">
               <span class="additional-card__weight">1 упаковка (30 г)</span>
               <span class="additional-card__price">300 ₽</span>
             </div>
+           </div>
+
             <a class="additional__link" href="./program.html">
-              <button class="additional__button button button--primary" type="submit">
+              <button class="additional__button button button--primary"  type="button">
                 Заказать
               </button>
             </a>
           </div>
            <div class="additional-card__bottom-line"></div>
+        </div>
         </div>
         </div>
         </section>
@@ -461,44 +662,91 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <a class="footer__logo" href="#">
-      <img class="footer__logo-image" src="./images/footer/footer-logo.svg" width="128" height="24" alt="Логотип магазина" />
-    </a>
+ <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo" href="#">
+          <img
+            class="footer__logo-image"
+            src="./images/footer/footer-logo.svg"
+            width="128"
+            height="24"
+            alt="Логотип магазина"
+          />
+        </a>
 
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в ВКонтакте">
-            <img class="social__icon" src="./images/social/social-icon-vk.svg" width="28" height="22" alt="Иконка ВКонтакте" />
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vk"
+                href="https://vk.com/htmlacademy"
+                aria-label="Мы в ВКонтакте"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/social/social-icon-vk.svg"
+                  width="28"
+                  height="22"
+                  alt="Иконка ВКонтакте"
+                />
 
-            <span class="visually-hidden">Мы в ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" aria-label="Мы в YouTube">
-            <img class="social__icon" src="./images/social/social-icon-youtube.svg" width="28" height="22" alt="Иконка YouTube" />
-            <span class="visually-hidden">Мы в YouTube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Мы в Telegram">
-            <img class="social__icon" src="./images/social/social-icon-telegram.svg" width="28" height="22" alt="Иконка Telegram" />
-            <span class="visually-hidden">Мы в Telegram</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+                <span class="visually-hidden">Мы в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--youtube"
+                href="https://www.youtube.com/@HTMLAcademyTV"
+                aria-label="Мы в YouTube"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/social/social-icon-youtube.svg"
+                  width="28"
+                  height="22"
+                  alt="Иконка YouTube"
+                />
+                <span class="visually-hidden">Мы в YouTube</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--telegram"
+                href="https://t.me/htmlacademy"
+                aria-label="Мы в Telegram"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/social/social-icon-telegram.svg"
+                  width="28"
+                  height="22"
+                  alt="Иконка Telegram"
+                />
+                <span class="visually-hidden">Мы в Telegram</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    <div class="academy">
-      <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
-      <a class="academy__link-icon" href="#">
-        <img class="academy__icon" src="./images/academy/logo-academy.svg" width="27" height="34" alt="иконка академии" />
-      </a>
-    </div>
-  </footer>
+        <div class="academy">
+          <a
+            class="academy__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+          >
+            HTML Academy
+          </a>
+          <a class="academy__link-icon" href="#">
+            <img
+              class="academy__icon"
+              src="./images/academy/logo-academy.svg"
+              width="27"
+              height="34"
+              alt="иконка академии"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
 
   <script src="scripts/index.js" defer></script>
 </body>
