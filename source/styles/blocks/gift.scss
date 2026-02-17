@@ -1,61 +1,64 @@
 .gift {
-  margin: 0 0 42px 0;
-  padding: 0 0 290px 0;
-  background-color: #ffffff;
+  margin: 0 0 7px 0;
+  padding: 0;
+  position: relative;
 }
 
 .gift__container {
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0 20px 0 20px;
-  &::before {
-    content: "";
-    width: 78px;
-    height: 80px;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translate(-50%);
-    background: url("../../images/gift/icon-gift.-mobile.svg") no-repeat
-      no-repeat 0 0;
-    z-index: 10;
-  }
+}
+
+.gift__container::after {
+  content: "";
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../images/gift/icon-gift-m@2x.png") no-repeat center;
+  background-size: contain;
+  z-index: 10;
 }
 
 .gift__wrapper {
-  background: #414141 url("../../images/gift/gift-mobile@2x.jpg") no-repeat
-    center top;
-  margin: 0 auto;
-  width: 280px;
-  height: 290px;
-  padding: 188px 0 102px 58px;
+  background: #414141 url("../../images/gift/gift-mobile@2x.jpg") no-repeat center
+    top;
+  background-size: contain;
+  width: 100%;
+  padding: 186px 20px 42px 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
+}
 
-  &::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-    background-color: $thema;
-    opacity: 0.85;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-  }
+.gift__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $thema;
+  opacity: 0.85;
+  z-index: 1;
 }
 
 .gift__content {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
-  padding: 0;
+  text-align: center;
 }
 
 .gift__text {
-  width: 161px;
-  font-family: $lato;
+  display: block;
+  max-width: 161px;
+  margin: 0 auto;
+  font-family: "Lato", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -63,4 +66,9 @@
   color: #ffffff;
   position: relative;
   z-index: 3;
+}
+
+.gift__link {
+  display: block;
+  text-decoration: none;
 }
