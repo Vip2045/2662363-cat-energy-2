@@ -35,11 +35,16 @@
   flex-shrink: 0;
 
   @media (min-width: $tablet) {
+    width: 174px;
+    height: 50;
+    display: block;
     top: 25px;
-    left: 29px;
+    left: 30px;
   }
 
   @media (min-width: $desktop) {
+    width: 202px;
+    height: 59;
     top: 55px;
     left: 0;
   }

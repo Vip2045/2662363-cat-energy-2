@@ -1,70 +1,48 @@
 .additional-card {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 14px 20px 0;
   position: relative;
-  width: 100%;
+  border-top: 1px solid #cdcdcd;
+
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 16px 38px 14px;
     width: 100%;
-    border: 1px solid #cdcdcd;
-  }
-}
-
-.additional-card__top-line {
-  width: 280px;
-  height: 1px;
-  background-color: #cdcdcd;
-  margin: 0 0 13px 0;
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.additional-card__bottom-line {
-  width: 280px;
-  height: 1px;
-  background-color: #cdcdcd;
-  margin: 0 0 13px 0;
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.additional-card__content {
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: $tablet) {
-    margin: 10px 1px 0 0;
-    padding: 0;
-    width: 630px;
+    min-height: 85px;
+    margin: 0 auto;
+    padding: 0 38px 9px;
     display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    justify-content: space-between;
-    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+    @media (min-width: $desktop) {             
+    margin: 0;                   
+    display: flex;              
+    flex-direction: column;      
   }
 }
 
-.additional-card__row {
+.additional-card:last-child {
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0 0 0 0;
+    border-bottom: none;
+  }
+}
+
+.additional-card__wrapper {
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 26px 0 24px 0;
+    padding: 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
   }
 }
+
 .additional-card__title {
   margin: 0;
-  padding: 0 0 13px 0;
+  padding: 0 0 12px 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -72,9 +50,9 @@
   text-transform: uppercase;
   text-align: left;
   color: #222222;
-
   @media (min-width: $tablet) {
-    margin: 0 0 7px 1px;
+    width: auto;
+    margin: 0;
     padding: 0;
     font-size: 20px;
     line-height: 20px;
@@ -84,22 +62,18 @@
 .additional-card__desc {
   margin: 0 0 15px 1px;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
-
   @media (min-width: $tablet) {
-    width: auto;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    border: 1px solid black;
+    display: block;
+    margin: 1px -47px 0 0;
+    padding: 0 ;
   }
 }
 
 .additional-card__weight,
 .additional-card__price {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -112,17 +86,13 @@
     padding: 0;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 48px;
   }
 }
 
-.additional__link {
-  text-decoration: none;
-  display: block;
-}
-
-.additional__button {
+.additional-card__button {
   margin: 0 auto 18px;
-  display: inline-block;
+  display: block;
   width: 100%;
   border: none;
   padding: 10px 109px 10px 109px;
@@ -132,18 +102,16 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
-
   @media (min-width: $tablet) {
-    margin: 0 auto;
-    padding: 10px 285px 10px 285px;
-    display: inline-block;
-    width: 632px;
-    font-size: 16px;
-    line-height: 20px;
+    width: 100%;
+    margin: 0 auto 18px;
+    padding: 10px 286px;
+    display: block;
+    width: 100%;
   }
 }
 
