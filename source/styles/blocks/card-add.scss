@@ -1,96 +1,127 @@
 .card-add {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  margin: 0 auto;
-  padding: 25px 20px;
-  height: 209px;
+  margin: 0;
+  padding: 20px;
   border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    margin: 99px auto;
-    padding: 0 0 426px 0;
     width: 324px;
-    display: flex;
-    position: relative;
-    z-index: 5;
+    margin: 101px auto 0;
+    padding: 0 0 40px;
     border-top: none;
-    border-bottom: none;
+    background-color: #ffffff;
     border: 2px solid #f2f2f2;
+    list-style: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin: 94px auto 0;
+    padding: 0;
+    border-top: none;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    list-style: none;
+    
   }
 }
 
-.card__add-container {
+.card-add__container {
   width: 219px;
   margin: 0 auto;
-  padding: 0 0 20px 0;
+  padding: 6px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
 
-    @media (min-width: $tablet) {
-    margin: 0 auto;
-    padding: 0 0 19px 0;
+  @media (min-width: $tablet) {
+    display: block;
+    width: 170px;
+    height: 217px;
+    margin: 50px auto 81px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 170px;
+    margin: 49px auto 82px;
+    padding: 0;
   }
 }
 
-.card__add-link {
+.card-add__link {
   text-decoration: none;
   display: block;
 }
 
-.card__add-image {
+.card-add__image {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   width: 30px;
   height: 30px;
   object-fit: cover;
   margin-bottom: 23px;
   @media (min-width: $tablet) {
-    margin: 50px 0 49px 0;
-    padding: 0 0 0 0;
     width: 60px;
     height: 60px;
+    margin: 0 auto 49px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 39px;
+    padding: 0;
   }
 }
 
-.card__add-desc {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 9px;
-  @media (min-width: $tablet) {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-  }
-}
-
-.card__add-title {
+.card-add__desc {
+  display: block;
+  width: 219px;
   margin: 0;
+  padding: 0;
+  text-align: center;
+  @media (min-width: $tablet) {
+    display: block;
+    width: 170px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.card-add__title {
+  margin: 0 0 9px 0;
   padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
   color: #111111;
   @media (min-width: $tablet) {
-    margin: 0 0 14px 0;
+    margin: 0 0 23px 19px;
     padding: 0;
     width: 134px;
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 26px 18px;
+    padding: 0;
+    width: 134px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
-.card__add-text {
-  margin: 0;
+.card-add__text {
+  margin: 0 0 20px 0;
   padding: 0;
   width: 219px;
   font-family: $lato;
@@ -99,24 +130,28 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
-
   @media (min-width: $tablet) {
-    margin: 0 0 64px 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0;
     width: 170px;
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop) {
+    width: 170px;
+    margin: 0 0 26px 1px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
 }
 
-.card__add-button__link {
-  text-decoration: none;
+.card-add__button {
   display: block;
-}
-
-.card__add-button {
   margin: 0 auto;
-  padding: 10px 94px 10px 94px;
+  padding: 10px 20px;
   display: inline-block;
   width: 100%;
   border: none;
@@ -130,12 +165,18 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
-
-   @media (min-width: $tablet) {
-    margin: 0 0 0 36px;
-    padding: 8px 0 10px 0;
+  @media (min-width: $tablet) {
+    display: block;
     width: 250px;
-   
+    margin-top: 22px;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 169px;
+    margin: 0 auto 26px;
+    padding: 10px 39px;
   }
 }
 

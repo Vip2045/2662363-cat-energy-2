@@ -5,30 +5,34 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    width: 100%;
     margin: 0;
-    padding: 62px 0 55px 30px;
+    padding: 0;
     display: block;
   }
 
   @media (min-width: $desktop) {
     margin: 0;
-    padding: 75px 0 61px;
-    display: block
+    padding: 0;
   }
 }
 
 .footer__container {
-
-   @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 768px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 61px 30px;
   }
 
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
+    padding: 74px 0;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
