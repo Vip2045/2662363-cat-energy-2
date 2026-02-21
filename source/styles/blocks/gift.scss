@@ -2,6 +2,10 @@
   margin: 0 0 7px 0;
   padding: 0;
   position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
 
   @media (min-width: $tablet) {
     width: 700px;
@@ -9,6 +13,17 @@
     margin: 0 auto 77px;
     padding: 0;
   }
+<<<<<<< HEAD
+=======
+
+  @media (min-width: $desktop) {
+    width: 245px;  
+    margin: 0;
+    padding: 0;
+  }
+=======
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
 }
 
 .gift__container {
@@ -16,10 +31,42 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
   @media (min-width: $tablet) {
     width: 100%;
     padding: 0 0 0;
   }
+=======
+}
+
+.gift__container::after {
+  content: "";
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../images/gift/icon-gift-m@2x.png") no-repeat center;
+  background-size: contain;
+  z-index: 10;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+}
+
+.gift__container::after {
+  content: "";
+  width: 78px;
+  height: 80px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../images/gift/icon-gift-m@2x.png") no-repeat center;
+  background-size: contain;
+  z-index: 10;
 }
 
 .gift__container::after {
@@ -36,8 +83,16 @@
 }
 
 .gift__wrapper {
+<<<<<<< HEAD
   background: #414141 url("../../images/gift/gift-mobile@2x.jpg") no-repeat
     center top;
+<<<<<<< HEAD
+=======
+=======
+  background: #414141 url("../../images/gift/gift-mobile@2x.jpg") no-repeat center
+    top;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
   background-size: contain;
   width: 100%;
   padding: 186px 20px 42px 20px;
