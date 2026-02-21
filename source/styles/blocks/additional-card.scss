@@ -1,5 +1,6 @@
 .additional-card {
   margin: 0 auto;
+<<<<<<< HEAD
   padding: 14px 20px 0;
   position: relative;
   border-top: 1px solid #cdcdcd;
@@ -40,6 +41,39 @@
   }
 }
 
+=======
+  padding: 26px 37px;
+  position: relative;
+  border-top: 1px solid #cdcdcd;
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 27px 38px 9px;
+    display: block;
+    border-top: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional-card:last-child {
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
+}
+
+.additional-card__content {
+  margin: 0 20px;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
 .additional-card__title {
   margin: 0;
   padding: 0 0 12px 0;
@@ -51,9 +85,14 @@
   text-align: left;
   color: #222222;
   @media (min-width: $tablet) {
+<<<<<<< HEAD
     width: auto;
     margin: 0;
     padding: 0;
+=======
+    margin: 0 0 5px 0;
+    padding: 0 0 0 0;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     font-size: 20px;
     line-height: 20px;
   }
@@ -65,9 +104,18 @@
   align-items: flex-end;
   justify-content: space-between;
   @media (min-width: $tablet) {
+<<<<<<< HEAD
     display: block;
     margin: 1px -47px 0 0;
     padding: 0 ;
+=======
+    margin: -22px 4px 21px 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: left;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
   }
 }
 
@@ -82,14 +130,18 @@
   text-align: center;
   color: #444444;
   @media (min-width: $tablet) {
-    margin: 0 0 0 0;
-    padding: 0;
     font-size: 16px;
     line-height: 20px;
+<<<<<<< HEAD
     margin-right: 48px;
   }
 }
 
+=======
+    text-align: center;
+  }
+}
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
 .additional-card__button {
   margin: 0 auto 18px;
   display: block;
@@ -106,6 +158,7 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
+<<<<<<< HEAD
   @media (min-width: $tablet) {
     width: 100%;
     margin: 0 auto 18px;
@@ -113,6 +166,8 @@
     display: block;
     width: 100%;
   }
+=======
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
 }
 
 .button--primary {

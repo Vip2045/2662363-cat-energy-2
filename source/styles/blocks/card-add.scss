@@ -5,9 +5,9 @@
   border-top: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
-
   @media (min-width: $tablet) {
     width: 324px;
+<<<<<<< HEAD
     margin: 101px auto 0;
     padding: 0 0 40px;
     border-top: none;
@@ -25,6 +25,19 @@
     border: 2px solid #f2f2f2;
     list-style: none;
     
+=======
+    height: 429px;
+    margin: 70px auto 0;
+    padding: 0;
+    border-top: none;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    list-style: none;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
   }
 }
 
@@ -36,11 +49,15 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
   @media (min-width: $tablet) {
     display: block;
     width: 170px;
     height: 217px;
+<<<<<<< HEAD
     margin: 50px auto 81px;
     padding: 0;
   }
@@ -48,6 +65,9 @@
   @media (min-width: $desktop) {
     width: 170px;
     margin: 49px auto 82px;
+=======
+    margin: 46px 77px 83px 77px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     padding: 0;
   }
 }
@@ -67,6 +87,7 @@
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
+<<<<<<< HEAD
     margin: 0 auto 49px;
     padding: 0;
   }
@@ -75,6 +96,9 @@
     width: 60px;
     height: 60px;
     margin: 0 auto 39px;
+=======
+    margin: 0 auto 50px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     padding: 0;
   }
 }
@@ -103,7 +127,11 @@
   text-transform: uppercase;
   color: #111111;
   @media (min-width: $tablet) {
+<<<<<<< HEAD
     margin: 0 0 23px 19px;
+=======
+    margin: 0 0 23px 15px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     padding: 0;
     width: 134px;
     font-size: 20px;
@@ -132,8 +160,12 @@
   color: #444444;
   @media (min-width: $tablet) {
     margin: 0 0 0 0;
+<<<<<<< HEAD
     padding: 0 0 0;
     width: 170px;
+=======
+    width: 166px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     font-size: 16px;
     line-height: 18px;
   }
@@ -165,11 +197,16 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
+<<<<<<< HEAD
   @media (min-width: $tablet) {
+=======
+   @media (min-width: $tablet) {
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     display: block;
     width: 250px;
     margin-top: 22px;
     padding: 10px 20px;
+<<<<<<< HEAD
   }
 
   @media (min-width: $desktop) {
@@ -177,6 +214,8 @@
     width: 169px;
     margin: 0 auto 26px;
     padding: 10px 39px;
+=======
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
   }
 }
 

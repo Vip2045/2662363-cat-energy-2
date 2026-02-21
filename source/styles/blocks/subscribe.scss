@@ -4,6 +4,7 @@
   padding: 0 0 40px 0;
   background-color: #ffffff;
 
+<<<<<<< HEAD
   @media (min-width: $tablet) {
     margin: 0 0 81px;
     padding: 0;
@@ -28,6 +29,15 @@
     padding: 0;
     width: 100%;
   }
+=======
+.subscribe__title {
+  margin: 0 0 31px;
+}
+
+.subscribe__container {
+  margin: 0 auto;
+  padding: 0 20px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
 }
 
 .subscribe__description {
