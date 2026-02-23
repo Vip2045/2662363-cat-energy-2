@@ -7,17 +7,35 @@
   position: relative;
 
   @media (min-width: $tablet) {
+<<<<<<< HEAD
     margin: 0 0 79px 0;
     padding: 0 0 0 30px;
+=======
+<<<<<<< HEAD
+    margin: 0 0 80px 0;
+    padding: 0 0 0 30px;
+=======
+<<<<<<< HEAD
+    margin: 0 0 80px 0;
+    padding: 0 0 0 30px;
+=======
+    margin: 0 0 80px 50px;
+    padding: 0 0 0 0;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     font-size: 32px;
     line-height: 32px;
   }
 
+<<<<<<< HEAD
     @media (min-width: $desktop) {
      margin: 0 0 80px;
      padding: 0;
   }
 
+=======
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   &::before {
     content: "";
     border-top: 2px solid $thema;
@@ -30,6 +48,7 @@
     z-index: 1;
 
     @media (min-width: $tablet) {
+<<<<<<< HEAD
       top: 15px;
     }
   }
@@ -40,6 +59,31 @@
   }
 
 
+=======
+<<<<<<< HEAD
+      top: 15px;
+=======
+<<<<<<< HEAD
+      top: 15px;
+=======
+      width: 111%;
+      height: 1px;
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: -50px;
+      z-index: 1;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
+    }
+  }
+}
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 .special-title__wrapper {
   display: block;
   @media (min-width: $desktop) {
@@ -48,6 +92,14 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 .special-title__text {
   display: inline-block;
   padding: 0 40px 0 20px;
@@ -56,15 +108,30 @@
   z-index: 2;
   @media (min-width: $tablet) {
     display: inline-block;
+<<<<<<< HEAD
     padding: 0 40px 0 40px;
+=======
+<<<<<<< HEAD
+    padding: 0 40px 0 40px;
+=======
+<<<<<<< HEAD
+    padding: 0 40px 0 40px;
+=======
+    padding: 0 40px 0 20px;
+>>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
+>>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     background-color: #ffffff;
     position: relative;
     z-index: 2;
   }
+<<<<<<< HEAD
 
     @media (min-width: $desktop) {
      font-size: 40px;
      line-height: 40px;
      margin-left: -40px;
   }
+=======
+>>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }

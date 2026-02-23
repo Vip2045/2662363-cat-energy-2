@@ -1,188 +1,61 @@
 .gift {
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 0 0 42px 0;
+  padding: 0 0 290px 0;
+  background-color: #ffffff;
+}
+
+.gift__container {
+  position: absolute;
   width: 100%;
-  height: 290px;
-  position: relative;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet) {
-    max-width: 707px; /* Меняем с width на max-width */
-    width: 100%;
-    height: 200px;
-    margin: 0 auto 79px;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: 245px; /* Меняем с width на max-width */
-    width: 100%;
-    height: 288px;
-    margin: 0 auto;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    background: url("../../images/gift/icon-gift.-mobile.svg") no-repeat
+      no-repeat 0 0;
+    z-index: 10;
   }
 }
 
 .gift__wrapper {
-  width: 100%;
-  height: 100%;
+  background: #414141 url("../../images/gift/gift-mobile@2x.jpg") no-repeat
+    center top;
   margin: 0 auto;
-  padding: 0;
+  width: 280px;
+  height: 290px;
+  padding: 188px 0 102px 58px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover; /* Это обеспечивает покрытие всей площади */
-  background-position: center;
 
-  /* Mobile */
-  background-image: -webkit-image-set(
-    url("../../images/gift/gift-m@1x.webp") 1x,
-    url("../../images/gift/gift-m@2x.webp") 2x
-  );
-  background-image: image-set(
-    url("../../images/gift/gift-m@1x.webp") type("image/webp") 1x,
-    url("../../images/gift/gift-m@2x.webp") type("image/webp") 2x,
-    url("../../images/gift/gift-m@1x.jpg") 1x,
-    url("../../images/gift/gift-m@2x.jpg") 2x
-  );
-
-  @media (min-width: $tablet) {
+  &::before {
+    content: "";
     width: 100%;
-    height: 200px;
-    padding: 0;
-
-    background-image: -webkit-image-set(
-      url("../../images/gift/gift-t@1x.webp") 1x,
-      url("../../images/gift/gift-t@2x.webp") 2x
-    );
-    background-image: image-set(
-      url("../../images/gift/gift-t@1x.webp") type("image/webp") 1x,
-      url("../../images/gift/gift-t@2x.webp") type("image/webp") 2x,
-      url("../../images/gift/gift-t@1x.jpg") 1x,
-      url("../../images/gift/gift-t@2x.jpg") 2x
-    );
-  }
-
-  @media (min-width: $desktop) {
-    width: 100%;
-    height: 288px;
-    padding: 0;
-
-    background-image: -webkit-image-set(
-      url("../../images/gift/gift-d@1x.webp") 1x,
-      url("../../images/gift/gift-d@2x.webp") 2x
-    );
-    background-image: image-set(
-      url("../../images/gift/gift-d@1x.webp") type("image/webp") 1x,
-      url("../../images/gift/gift-d@2x.webp") type("image/webp") 2x,
-      url("../../images/gift/gift-d@1x.jpg") 1x,
-      url("../../images/gift/gift-d@2x.jpg") 2x
-    );
-  }
-}
-
-.gift__wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #62a73c;
-  opacity: 0.85;
-  z-index: 1;
-}
-
-.gift__container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  height: 100%;
-
-  @media (min-width: $desktop) {
-    padding: 103px 0 0;
-  }
-}
-
-.gift__container::after {
-  content: "";
-  width: 78px;
-  height: 80px;
-  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 10;
-
-  background-image: -webkit-image-set(
-    url("../../images/gift/icon-gift-m@1x.webp") 1x,
-    url("../../images/gift/icon-gift-m@2x.webp") 2x
-  );
-  background-image: image-set(
-    url("../../images/gift/icon-gift-m@1x.webp") type("image/webp") 1x,
-    url("../../images/gift/icon-gift-m@2x.webp") type("image/webp") 2x,
-    url("../../images/gift/icon-gift-m@1x.png") 1x,
-    url("../../images/gift/icon-gift-m@2x.png") 2x
-  );
-
-  @media (min-width: $tablet) {
-    width: 80px;
-    height: 82px;
-    top: 60px;
-
-    background-image: -webkit-image-set(
-      url("../../images/gift/icon-gift-t@1x.webp") 1x,
-      url("../../images/gift/icon-gift-t@2x.webp") 2x
-    );
-    background-image: image-set(
-      url("../../images/gift/icon-gift-t@1x.webp") type("image/webp") 1x,
-      url("../../images/gift/icon-gift-t@2x.webp") type("image/webp") 2x,
-      url("../../images/gift/icon-gift-t@1x.png") 1x,
-      url("../../images/gift/icon-gift-t@2x.png") 2x
-    );
-  }
-
-  @media (min-width: $desktop) {
-    width: 80px;
-    height: 83px;
-    top: 60px;
-
-    background-image: -webkit-image-set(
-      url("../../images/gift/icon-gift-d@1x.webp") 1x,
-      url("../../images/gift/icon-gift-d@2x.webp") 2x
-    );
-    background-image: image-set(
-      url("../../images/gift/icon-gift-d@1x.webp") type("image/webp") 1x,
-      url("../../images/gift/icon-gift-d@2x.webp") type("image/webp") 2x,
-      url("../../images/gift/icon-gift-d@1x.png") 1x,
-      url("../../images/gift/icon-gift-d@2x.png") 2x
-    );
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: $thema;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
   }
 }
 
 .gift__content {
-  position: relative;
-  z-index: 2;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .gift__text {
-  display: block;
-  width: 162px;
-  margin: 143px auto 0; /* Отступ сверху для иконки */
-  font-family: "Lato", Arial, sans-serif;
+  width: 161px;
+  font-family: $lato;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -201,4 +74,9 @@
   text-decoration: none;
   width: 100%;
   height: 100%;
+}
+
+.gift__link {
+  display: block;
+  text-decoration: none;
 }
