@@ -29,7 +29,7 @@
             src="./images/logo/logo-mobile.svg"
             width="33"
             height="38"
-            alt="текст сайта Кэт Энерджи"
+            alt="логотип сайта Кэт Энерджи"
           />
         </picture>
       </a>
@@ -109,8 +109,8 @@
         <h2 class="guide__title title">Как это работает</h2>
         <ul class="guide__list">
           <li class="guide__item guide__item--leaf">
-            <span class="guide__description"
-              >Функциональное питание содержит только полезные питательные
+            <span class="guide__description">
+              Функциональное питание содержит только полезные питательные
               вещества.</span
             >
           </li>
@@ -179,21 +179,26 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/slider/before-t@1x.png 1x,
-                        ./images/slider/before-t@2x.png 2x
+                        ./images/slider/before-t@1x.webp 1x,
+                        ./images/slider/before-t@1x.png  1x,
+                        ./images/slider/before-t@2x.webp 2x,
+                        ./images/slider/before-t@2x.png  2x
                       "
                       width="560"
                       height="512"
                     />
 
                     <!-- Мобильные -->
+                    
                     <img
                       class="slider__image"
-                      src="./images/slider/before-m@1x.png"
+                      srcset="./images/slider/before-m@1x.webp"
+                      srcset="./images/slider/before-m@1x.png"
+                      srcset="./images/slider/before-m@2x.webp 2x"
                       srcset="./images/slider/before-m@2x.png 2x"
                       width="280"
                       height="256"
-                      alt="Толстый кот"
+                      alt="Худой кот"
                     />
                   </picture>
                 </li>
@@ -204,7 +209,9 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
+                        ./images/slider/after-t@1x.webp 1x,
                         ./images/slider/after-t@1x.png 1x,
+                        ./images/slider/after-t@2x.webp 2x,
                         ./images/slider/after-t@2x.png 2x
                       "
                       width="560"
@@ -214,7 +221,9 @@
                     <!-- Мобильные -->
                     <img
                       class="slider__image"
-                      src="./images/slider/after-m@1x.png"
+                      srcset="./images/slider/after-m@1x.webp"
+                      srcset="./images/slider/after-m@1x.png"
+                      srcset="./images/slider/after-m@2x.webp 2x"
                       srcset="./images/slider/after-m@2x.png 2x"
                       width="280"
                       height="256"
@@ -249,16 +258,16 @@
           <div class="map__google">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197904!2d30.320472476885115!3d59.93871916209403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINC0LiAxOS84LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1766935053013!5m2!1sru!2sru"
-              width="100%"
-              height="450px"
+              width="600"
+              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             >
             </iframe>
-           
           </div>
+
           <noscript>
             <div class="map__images">
               <div class="visually-hidden">
@@ -291,13 +300,15 @@
                 href="https://vk.com/htmlacademy"
                 aria-label="Мы в ВКонтакте"
               >
-                <img
-                  class="social__icon"
-                  src="./images/social/social-icon-vk.svg"
+                <svg
                   width="28"
                   height="22"
-                  alt="Иконка ВКонтакте"
-                />
+                  viewBox="0 0 28 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="./icons/stack.svg#vk"></use>
+                </svg>
 
                 <span class="visually-hidden">Мы в ВКонтакте</span>
               </a>
@@ -308,13 +319,16 @@
                 href="https://www.youtube.com/@HTMLAcademyTV"
                 aria-label="Мы в YouTube"
               >
-                <img
-                  class="social__icon"
-                  src="./images/social/social-icon-youtube.svg"
+                <svg
                   width="28"
                   height="22"
-                  alt="Иконка YouTube"
-                />
+                  viewBox="0 0 28 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="./icons/stack.svg#yt"></use>
+                </svg>
+
                 <span class="visually-hidden">Мы в YouTube</span>
               </a>
             </li>
@@ -324,13 +338,15 @@
                 href="https://t.me/htmlacademy"
                 aria-label="Мы в Telegram"
               >
-                <img
-                  class="social__icon"
-                  src="./images/social/social-icon-telegram.svg"
+                <svg
                   width="28"
                   height="22"
-                  alt="Иконка Telegram"
-                />
+                  viewBox="0 0 28 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="./icons/stack.svg#tg"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Telegram</span>
               </a>
             </li>
@@ -345,13 +361,15 @@
             HTML Academy
           </a>
           <a class="academy__link-icon" href="#">
-            <img
-              class="academy__icon"
-              src="./images/academy/logo-academy.svg"
+            <svg
               width="27"
               height="34"
-              alt="иконка академии"
-            />
+              viewBox="0 0 27 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./icons/stack.svg#academy"></use>
+            </svg>
           </a>
         </div>
       </div>

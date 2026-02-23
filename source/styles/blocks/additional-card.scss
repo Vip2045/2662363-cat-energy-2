@@ -1,70 +1,79 @@
 .additional-card {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto 0;
+  padding: 12px 20px 0 20px;
   position: relative;
-  width: 100%;
+  border-top: 1px solid #cdcdcd;
+
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 16px 38px 14px;
     width: 100%;
-    border: 1px solid #cdcdcd;
+    display: flex;
+    margin: 0 auto 2px;
+    padding: 24px 38px 10px;
+    border-top: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop) {
+    width: 896px;
+    margin: 0 auto;
+    padding: 15px 0 15px;
+    display: flex;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
-.additional-card__top-line {
-  width: 280px;
-  height: 1px;
-  background-color: #cdcdcd;
-  margin: 0 0 13px 0;
+.additional-card:last-child {
   @media (min-width: $tablet) {
-    display: none;
+    border-bottom: none;
+  }
+
+   @media (min-width: $desktop) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
-.additional-card__bottom-line {
-  width: 280px;
-  height: 1px;
-  background-color: #cdcdcd;
-  margin: 0 0 13px 0;
+.additional-card__wrapper {
   @media (min-width: $tablet) {
-    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .additional-card__content {
-  margin: 0;
-  padding: 0;
-  width: 280px;
-  display: flex;
-  flex-direction: column;
   @media (min-width: $tablet) {
-    margin: 10px 1px 0 0;
+    width: 100%;
+    margin: 0 0 -5px;
     padding: 0;
-    width: 630px;
     display: flex;
-    flex-direction: column;
-    align-self: flex-end;
+    align-items: baseline;
     justify-content: space-between;
-    gap: 20px;
+  }
+
+    @media (min-width: $desktop) {
+    width: 100%;
+    margin: 1px 0 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
-.additional-card__row {
-  @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0 0 0 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-}
 .additional-card__title {
   margin: 0;
-  padding: 0 0 13px 0;
+  padding: 0 0 12px 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -72,9 +81,9 @@
   text-transform: uppercase;
   text-align: left;
   color: #222222;
-
   @media (min-width: $tablet) {
-    margin: 0 0 7px 1px;
+    width: 163px;
+    margin: 0;
     padding: 0;
     font-size: 20px;
     line-height: 20px;
@@ -89,17 +98,24 @@
 
   @media (min-width: $tablet) {
     width: auto;
-    padding: 0;
+    margin: 0 0 26px;
+    padding: 0 2px 0;
+    gap: 49px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 13px 0;
+    padding: 0 34px 0;
     display: flex;
-    align-items: center;
-    gap: 50px;
-    border: 1px solid black;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 113px;
   }
 }
 
 .additional-card__weight,
 .additional-card__price {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -108,42 +124,53 @@
   text-align: center;
   color: #444444;
   @media (min-width: $tablet) {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 20px;
   }
+
+   @media (min-width: $desktop) {
+    width: 131px;
+    margin: 3px -48px 0 0;
+    padding: 0;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
-.additional__link {
-  text-decoration: none;
+
+
+.additional-card__button {
+  margin: 0 auto 20px;
   display: block;
-}
-
-.additional__button {
-  margin: 0 auto 18px;
-  display: inline-block;
   width: 100%;
   border: none;
-  padding: 10px 109px 10px 109px;
+  padding: 10px 109px;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
 
   @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0 auto 18px;
+    padding: 10px 286px;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    width: 244px;
     margin: 0 auto;
-    padding: 10px 285px 10px 285px;
-    display: inline-block;
-    width: 632px;
-    font-size: 16px;
-    line-height: 20px;
+    padding: 10px 92px ;
+   
   }
 }
 

@@ -23,21 +23,20 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    margin: 0;
-    padding: 60px 72px 60px 70px;
+    margin: 0 auto;
+    padding: 60px 70px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop) {
     position: relative;
+    width: 565px;
     top: -5px;
     left: 50%;
     margin-left: -610px;
-    padding: 59px 78px 59px 80px; 
-    width: 565px;
+    padding: 59px 78px; 
     background-color: #ffffff;
     z-index: 5;
-    
   }
 }
 
@@ -65,7 +64,7 @@
     font-size: 20px;
     line-height: 26px;
     margin: 0;
-    padding: 0 0 0;
+    padding: 0;
   }
 }
 
