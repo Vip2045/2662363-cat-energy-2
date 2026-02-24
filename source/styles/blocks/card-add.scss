@@ -9,7 +9,7 @@
   @media (min-width: $tablet) {
     width: 324px;
     margin: 101px auto 0;
-    padding: 0 0 40px;
+    padding: 0 37px 40px;
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
@@ -19,12 +19,11 @@
   @media (min-width: $desktop) {
     width: 245px;
     margin: 94px auto 0;
-    padding: 0;
+    padding: 0 38px 40px 38px;
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     list-style: none;
-    
   }
 }
 
@@ -152,7 +151,6 @@
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-  display: inline-block;
   width: 100%;
   border: none;
   font-family: $oswald;
@@ -165,18 +163,19 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
+
   @media (min-width: $tablet) {
     display: block;
-    width: 250px;
-    margin-top: 22px;
+    width: 100%;
+    margin: 0 auto;
     padding: 10px 20px;
   }
 
   @media (min-width: $desktop) {
-    display: block;
-    width: 169px;
-    margin: 0 auto 26px;
-    padding: 10px 39px;
+     display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
   }
 }
 
