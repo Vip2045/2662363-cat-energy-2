@@ -4,28 +4,10 @@
   padding: 0 0 40px 0;
   background-color: #ffffff;
 
-<<<<<<< HEAD
-  @media (min-width: $tablet) {
-    width: 100%;
-    margin: 0 0 81px;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop) {
-    width: 100%;
-    margin: 0 auto 104px;
-    padding: 0;
-  }
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
   @media (min-width: $tablet) {
     margin: 0 0 81px;
     padding: 0;
   }
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }
 
 .subscribe__title {
@@ -34,7 +16,6 @@
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
   }
 }
 
@@ -47,47 +28,6 @@
     padding: 0;
     width: 100%;
   }
-  @media (min-width: $desktop) {
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-=======
-<<<<<<< HEAD
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
-  }
-}
-
-.subscribe__container {
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    margin: 0 auto 34px;
-    padding: 0;
-    width: 100%;
-=======
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
-  }
-}
-
-.subscribe__container {
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet) {
-    margin: 0 auto 34px;
-    padding: 0;
-    width: 100%;
-  }
-=======
-.subscribe__title {
-  margin: 0 0 31px;
-}
-
-.subscribe__container {
-  margin: 0 auto;
-  padding: 0 20px;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
 }
 
 .subscribe__description {
@@ -99,11 +39,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-<<<<<<< HEAD
-  color: #000000;
-=======
   color: #000;
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 
   @media (min-width: $tablet) {
     width: 632px;
@@ -113,16 +49,6 @@
     line-height: 32px;
     text-align: center;
   }
-<<<<<<< HEAD
-
-  @media (min-width: $desktop) {
-    width: 1360px;
-    margin: 86px 39px 23px;
-    padding: 0;
-    text-align: center;
-  }
-=======
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }
 
 .subscribe__form {
@@ -141,18 +67,6 @@
     flex-direction: row;
     gap: 0;
   }
-<<<<<<< HEAD
-
-  @media (min-width: $desktop) {
-    width: 752px;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-  }
-=======
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }
 
 .subscribe__input {
@@ -168,15 +82,6 @@
     margin: 0;
     padding: 9px 12px 0;
   }
-<<<<<<< HEAD
-
-  @media (min-width: $desktop) {
-    width: 496px;
-    margin: 0;
-    padding: 9px 12px 0;
-  }
-=======
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }
 
 ::placeholder {
@@ -192,21 +97,12 @@
     margin: 0;
     padding: 0;
   }
-<<<<<<< HEAD
-
-  @media (min-width: $desktop) {
-    margin: 0;
-    padding: 0;
-  }
-=======
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
 }
 
 .subscribe__button {
-  width: 100%;
   margin: 0;
   padding: 15px 26px;
-  display: block;
+  display: inline-block;
   font-family: $oswald;
   font-weight: 400;
   font-size: 20px;
@@ -218,19 +114,7 @@
 
   @media (min-width: $tablet) {
     width: 256px;
-<<<<<<< HEAD
-    margin: 0 auto;
-    padding: 15px 70px;
-  }
-
-  @media (min-width: $desktop) {
-    display: block;
-    width: 256px;
-    margin: 0 auto;
-    padding: 15px 70px;
-=======
     margin: 0;
     padding: 0 70px 0;
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   }
 }

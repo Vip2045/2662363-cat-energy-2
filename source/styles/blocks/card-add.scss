@@ -5,19 +5,11 @@
   border-top: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
+
   @media (min-width: $tablet) {
     width: 324px;
-<<<<<<< HEAD
-    margin: 101px auto 0;
-    padding: 0 37px 40px;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
     margin: 101px auto 0;
     padding: 0 0 40px;
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
@@ -27,35 +19,12 @@
   @media (min-width: $desktop) {
     width: 245px;
     margin: 94px auto 0;
-<<<<<<< HEAD
-    padding: 0 38px 40px 38px;
-=======
     padding: 0;
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     list-style: none;
-<<<<<<< HEAD
-=======
     
-<<<<<<< HEAD
-=======
-=======
-    height: 429px;
-    margin: 70px auto 0;
-    padding: 0;
-    border-top: none;
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border: 2px solid #f2f2f2;
-    list-style: none;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   }
 }
 
@@ -67,27 +36,11 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   @media (min-width: $tablet) {
     display: block;
     width: 170px;
     height: 217px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     margin: 50px auto 81px;
     padding: 0;
   }
@@ -95,15 +48,6 @@
   @media (min-width: $desktop) {
     width: 170px;
     margin: 49px auto 82px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    margin: 46px 77px 83px 77px;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     padding: 0;
   }
 }
@@ -123,13 +67,6 @@
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     margin: 0 auto 49px;
     padding: 0;
   }
@@ -138,15 +75,6 @@
     width: 60px;
     height: 60px;
     margin: 0 auto 39px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    margin: 0 auto 50px;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     padding: 0;
   }
 }
@@ -175,19 +103,7 @@
   text-transform: uppercase;
   color: #111111;
   @media (min-width: $tablet) {
-<<<<<<< HEAD
     margin: 0 0 23px 19px;
-=======
-<<<<<<< HEAD
-    margin: 0 0 23px 19px;
-=======
-<<<<<<< HEAD
-    margin: 0 0 23px 19px;
-=======
-    margin: 0 0 23px 15px;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     padding: 0;
     width: 134px;
     font-size: 20px;
@@ -216,18 +132,8 @@
   color: #444444;
   @media (min-width: $tablet) {
     margin: 0 0 0 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
     padding: 0 0 0;
     width: 170px;
-=======
-    width: 166px;
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
     font-size: 16px;
     line-height: 18px;
   }
@@ -246,10 +152,7 @@
   display: block;
   margin: 0 auto;
   padding: 10px 20px;
-<<<<<<< HEAD
-=======
   display: inline-block;
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   width: 100%;
   border: none;
   font-family: $oswald;
@@ -262,38 +165,11 @@
   cursor: pointer;
   transition: background-color 0.4s ease;
   text-decoration: none;
-<<<<<<< HEAD
-
   @media (min-width: $tablet) {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px;
-  }
-
-  @media (min-width: $desktop) {
-     display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px;
-=======
-<<<<<<< HEAD
-  @media (min-width: $tablet) {
-=======
-<<<<<<< HEAD
-  @media (min-width: $tablet) {
-=======
-   @media (min-width: $tablet) {
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
     display: block;
     width: 250px;
     margin-top: 22px;
     padding: 10px 20px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
   }
 
   @media (min-width: $desktop) {
@@ -301,12 +177,6 @@
     width: 169px;
     margin: 0 auto 26px;
     padding: 10px 39px;
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7c8b38906eb0b8c7d55c1046bbb78979e89d6bf0
->>>>>>> 25c8c01b77839aac0e02974937e30e1dad334e22
->>>>>>> cdf1e0ffe83057340e8f00bd4d6ae5ce747cde34
   }
 }
 
