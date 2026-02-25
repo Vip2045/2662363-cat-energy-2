@@ -7,15 +7,15 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    margin: 0 0 79px 0;
+    margin: 0 0 79px;
     padding: 0 0 0 30px;
     font-size: 32px;
     line-height: 32px;
   }
 
-    @media (min-width: $desktop) {
-     margin: 0 0 80px;
-     padding: 0;
+  @media (min-width: $desktop) {
+    margin: 0 0 80px;
+    padding: 0;
   }
 
   &::before {
@@ -34,18 +34,19 @@
     }
   }
 
-    @media (min-width: $desktop) {
-      top: 17px;
-    }
+  @media (min-width: $desktop) {
+    top: 17px;
   }
+}
 
 
 .special-title__wrapper {
   display: block;
+
   @media (min-width: $desktop) {
-      width: 1220px;
-      margin: 0 auto;
-    }
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .special-title__text {
@@ -54,17 +55,18 @@
   background-color: #ffffff;
   position: relative;
   z-index: 2;
+
   @media (min-width: $tablet) {
     display: inline-block;
-    padding: 0 40px 0 40px;
+    padding: 0 40px;
     background-color: #ffffff;
     position: relative;
     z-index: 2;
   }
 
-    @media (min-width: $desktop) {
-     font-size: 40px;
-     line-height: 40px;
-     margin-left: -40px;
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-left: -40px;
   }
 }

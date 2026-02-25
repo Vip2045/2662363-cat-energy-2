@@ -3,6 +3,7 @@
   padding: 0;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
@@ -13,11 +14,12 @@
 
 .social__list {
   width: 132px;
-  margin: 0 auto ;
-  padding: 21px 0 15px 0;
+  margin: 0 auto;
+  padding: 21px 0 15px;
   list-style: none;
   display: flex;
   gap: 24px;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
@@ -28,7 +30,11 @@
     width: 132px;
   }
 
+<<<<<<< HEAD
     @media (min-width: $desktop) {
+=======
+  @media (min-width: $desktop) {
+>>>>>>> 5a1a787c65b8707ac5b104b079e8908cb1f2093f
     margin: 0;
     padding: 0;
     display: flex;
@@ -54,7 +60,11 @@
 
   &:hover,
   &:focus {
+<<<<<<< HEAD
   color: #68b738;
+=======
+    color: #68b738;
+>>>>>>> 5a1a787c65b8707ac5b104b079e8908cb1f2093f
   }
 
   &:active {

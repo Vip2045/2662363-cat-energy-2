@@ -1,6 +1,6 @@
 .contacts {
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
@@ -17,7 +17,7 @@
 
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 0 0 26px 0;
+  padding: 0 0 26px;
   display: flex;
   justify-content: space-between;
 
@@ -34,7 +34,7 @@
     top: -5px;
     left: 50%;
     margin-left: -610px;
-    padding: 59px 78px; 
+    padding: 59px 78px;
     background-color: #ffffff;
     z-index: 5;
   }
@@ -99,7 +99,7 @@
     line-height: 20px;
     margin: 0;
     padding: 0;
-     text-align: left;
+    text-align: left;
 
     .line-spacing {
       display: inline-block;
