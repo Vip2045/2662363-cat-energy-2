@@ -1,0 +1,72 @@
+.special-title {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 79px;
+    padding: 0 0 0 30px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 80px;
+    padding: 0;
+  }
+
+  &::before {
+    content: "";
+    border-top: 2px solid $thema;
+    width: 100%;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    z-index: 1;
+
+    @media (min-width: $tablet) {
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    top: 17px;
+  }
+}
+
+
+.special-title__wrapper {
+  display: block;
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.special-title__text {
+  display: inline-block;
+  padding: 0 40px 0 20px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet) {
+    display: inline-block;
+    padding: 0 40px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 40px;
+    line-height: 40px;
+    margin-left: -40px;
+  }
+}

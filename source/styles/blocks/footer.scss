@@ -1,31 +1,73 @@
 .footer {
   margin: 0;
-  padding: 0;
+  padding: 0 0 40px;
   background-color: #f2f2f2;
   text-align: center;
-  height: 240px;
 
   @media (min-width: $tablet) {
-    margin: 0;
-    padding: 0 30px 0 30px;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer__container {
+  @media (min-width: $tablet) {
+    width: 768px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 147px;
+    margin: 0 auto;
+    padding: 61px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 75px 0;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
 .footer__logo {
-  margin: 40px 0 0 0;
-  padding: 0 0 15px 0;
+  margin: 40px 0 0;
+  padding: 0 0 15px;
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #111111;
 
   @media (min-width: $tablet) {
     display: block;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 160px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+<<<<<<< HEAD
+    margin: 0 0 0 0;
+=======
+    margin: 0;
+>>>>>>> 5a1a787c65b8707ac5b104b079e8908cb1f2093f
+    padding: 0 160px 0 0;
+
+    &:hover,
+    &:focus {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+    }
   }
 }

@@ -1,0 +1,26 @@
+.page__body--index {
+  @media (min-width: $desktop) {
+    &::before {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #4b4b4b;
+      z-index: -2;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: $thema;
+      opacity: 0.85;
+      z-index: -1;
+    }
+  }
+}

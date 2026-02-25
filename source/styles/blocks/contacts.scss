@@ -1,26 +1,42 @@
 .contacts {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: #ffffff;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding: 101px 0 99px;
+    position: relative;
   }
 }
 
 .contacts__wrapper {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 26px;
   display: flex;
   justify-content: space-between;
-  height: 112px;
+
   @media (min-width: $tablet) {
     display: flex;
-    align-items: center;
-    margin: 0 0 0 0;
-    padding: 0 70px 0 70px;
+    margin: 0 auto;
+    padding: 60px 70px;
     justify-content: space-between;
-    height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    width: 565px;
+    top: -5px;
+    left: 50%;
+    margin-left: -610px;
+    padding: 59px 78px;
+    background-color: #ffffff;
+    z-index: 5;
   }
 }
 
@@ -34,33 +50,57 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
   @media (min-width: $tablet) {
     display: block;
     width: 163px;
-    margin: 0 0 3px 0;
+    margin: 0;
     padding: 0;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .contacts__address {
   width: 140px;
   margin: 25px 20px 0 0;
-  padding: 0 0 0 0;
+  padding: 0;
   font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
   font-style: normal;
+
   @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
     width: 157px;
-    margin: -3px 0 0 0;
-    padding: 0 0 0 0;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    .line-spacing {
+      display: inline-block;
+      padding-top: 20px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 157px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
     .line-spacing {
       display: inline-block;
       padding-top: 20px;
@@ -72,6 +112,7 @@
   width: 100%;
   height: 100%;
   padding: 0;
+
   @media (min-width: $tablet) {
     width: 100%;
     height: 100%;
