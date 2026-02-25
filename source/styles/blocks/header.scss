@@ -1,6 +1,6 @@
 .header {
   margin: 0;
-  padding: 65px 0 0 0;
+  padding: 65px 0 0;
   background-image: url("../../images/logo/logo-text.svg");
   background-position: 50% 23px;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
     padding: 33px 34px 22px 290px;
     background: none;
     box-sizing: border-box;
@@ -25,6 +25,7 @@
     z-index: 10;
   }
 }
+
 .header__logo {
   width: 33px;
   height: 38px;
@@ -48,9 +49,10 @@
     top: 55px;
     left: 0;
 
-     &:hover {
+    &:hover {
       opacity: 0.8;
-   }
+    }
+
     &:active {
       opacity: 0.6;
     }

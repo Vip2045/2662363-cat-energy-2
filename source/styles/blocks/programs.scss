@@ -1,7 +1,7 @@
 .programs {
   background-color: #ffffff;
   margin: 0;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px;
 
   @media (min-width: $tablet) {
     margin: 0 auto 45px 0;
@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop) {
     margin: 0;
-    padding: 0 0 41px 0;
+    padding: 0 0 41px;
   }
 }
 
@@ -103,6 +103,7 @@
   top: 20px;
   left: 27px;
   z-index: 3;
+
   @media (min-width: $tablet) {
     position: absolute;
     background: url("../../images/programs/cat-slim@1x.png") no-repeat center;
@@ -115,7 +116,8 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    background: url("../../images/programs/cat-slim-desktop@2x.png") no-repeat
+    background:
+      url("../../images/programs/cat-slim-desktop@2x.png") no-repeat
       center;
     width: 70px;
     height: 97px;
@@ -135,6 +137,7 @@
   top: 35px;
   left: 13px;
   z-index: 3;
+
   @media (min-width: $tablet) {
     position: absolute;
     background: url("../../images/programs/cat-pro@1x.png") no-repeat center;
@@ -147,7 +150,8 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    background: url("../../images/programs/cat-pro-desktop@2x.png") no-repeat
+    background:
+      url("../../images/programs/cat-pro-desktop@2x.png") no-repeat
       center;
     width: 134px;
     height: 56px;
@@ -159,7 +163,6 @@
 
 .programs__title {
   margin: 0 0 19px 70px;
-  padding: 0 0 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
@@ -177,7 +180,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 77px 0 73px 214px;
     font-size: 36px;
     line-height: 36px;
@@ -205,7 +208,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 52px 34px;
     width: auto;
     font-size: 16px;
@@ -241,9 +244,9 @@
     padding: 0;
   }
 
-   &:active {
+  &:active {
     opacity: 0.3;
-   }
+  }
 }
 
 /* Стрелка для ссылки */
@@ -260,23 +263,23 @@
 
   @media (min-width: $tablet) {
     left: 114px;
-    top: 0px;
+    top: 0;
   }
 
   @media (min-width: $desktop) {
     left: 114px;
     top: 1px;
-    }
   }
-
-  .programs__link:hover::after {
-  transform: scale(1.2);
-  left: 120px; 
 }
 
-  .programs__link:active::after {
+.programs__link:hover::after {
   transform: scale(1.2);
   left: 120px;
-  opacity: 0.3; 
+}
+
+.programs__link:active::after {
+  transform: scale(1.2);
+  left: 120px;
+  opacity: 0.3;
 }
 

@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+
   @media (min-width: $tablet) {
     display: block;
     margin: 0;
@@ -38,23 +40,24 @@
   color: #666666;
   cursor: pointer;
   transition: all 0.4s ease;
+
   @media (min-width: $tablet) {
     display: block;
-    margin: -7px 0 0 0;
+    margin: -7px 0 0;
     padding: 0;
     text-decoration: none;
   }
 
-   @media (min-width: $desktop) {
-   margin: -5px 0 0 0;
+  @media (min-width: $desktop) {
+    margin: -5px 0 0;
   }
 
-    &:hover,
-   &:focus {
-    color:  #68B738;
-   }
+  &:hover,
+  &:focus {
+    color: #68b738;
+  }
 
-    &:active {
-    color:  #444444;
-   }
+  &:active {
+    color: #444444;
+  }
 }

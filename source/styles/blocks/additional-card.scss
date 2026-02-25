@@ -1,6 +1,6 @@
 .additional-card {
-  margin: 0 auto 0;
-  padding: 12px 20px 0 20px;
+  margin: 0 auto;
+  padding: 12px 20px 0;
   position: relative;
   border-top: 1px solid #cdcdcd;
 
@@ -16,7 +16,7 @@
   @media (min-width: $desktop) {
     width: 896px;
     margin: 0 auto;
-    padding: 15px 0 15px;
+    padding: 15px 0;
     display: flex;
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
@@ -28,7 +28,7 @@
     border-bottom: none;
   }
 
-   @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -61,7 +61,7 @@
     justify-content: space-between;
   }
 
-    @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 100%;
     margin: 1px 0 0;
     padding: 0;
@@ -73,7 +73,7 @@
 
 .additional-card__title {
   margin: 0;
-  padding: 0 0 12px 0;
+  padding: 0 0 12px;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -81,6 +81,7 @@
   text-transform: uppercase;
   text-align: left;
   color: #222222;
+
   @media (min-width: $tablet) {
     width: 163px;
     margin: 0;
@@ -99,13 +100,13 @@
   @media (min-width: $tablet) {
     width: auto;
     margin: 0 0 26px;
-    padding: 0 2px 0;
+    padding: 0 2px;
     gap: 49px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 13px 0;
-    padding: 0 34px 0;
+    margin: 0 13px;
+    padding: 0 34px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -123,6 +124,7 @@
   line-height: 14px;
   text-align: center;
   color: #444444;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
@@ -130,7 +132,7 @@
     line-height: 20px;
   }
 
-   @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 131px;
     margin: 3px -48px 0 0;
     padding: 0;
@@ -138,7 +140,6 @@
     text-align: center;
   }
 }
-
 
 
 .additional-card__button {
@@ -169,8 +170,7 @@
     display: block;
     width: 244px;
     margin: 0 auto;
-    padding: 10px 92px ;
-   
+    padding: 10px 92px;
   }
 }
 

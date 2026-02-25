@@ -1,6 +1,6 @@
 .example {
   margin: 0;
-  padding: 0 20px 40px 20px;
+  padding: 0 20px 40px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
@@ -17,20 +17,19 @@
 }
 
 .example__container {
-    @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
     padding-top: 68px;
     justify-content: space-between;
-   
   }
 }
 
 .example__title {
   width: auto;
   margin: 0;
-  padding: 25px 0 0 0;
+  padding: 25px 0 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
@@ -40,7 +39,7 @@
 
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 0 0 61px 0;
+    padding: 0 0 61px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -68,15 +67,16 @@
 
 .example__text {
   margin: 0;
-  padding: 40px 0 6px 0;
+  padding: 40px 0 6px;
   font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
   @media (min-width: $tablet) {
     width: 708px;
-    margin: 0 0 55px 0;
+    margin: 0 0 55px;
     padding: 0;
     font-weight: 400;
     font-size: 16px;
@@ -95,7 +95,7 @@
 .example__wrapper {
   @media (min-width: $tablet) {
     width: 100%;
-    margin: 0 0 104px 0;
+    margin: 0 0 104px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,7 @@
 
 .example__list {
   width: 280px;
-  margin: 0 0 34px 0;
+  margin: 0 0 34px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -126,7 +126,7 @@
 
   @media (min-width: $desktop) {
     width: 433px;
-    margin: 0 0 62px 0;
+    margin: 0 0 62px;
     padding: 0 65px 0 0;
     display: flex;
     gap: 42px;
@@ -140,10 +140,11 @@
   width: 124px;
   height: 56px;
   border-radius: 3px;
-  margin: 14px 0 0 0;
-  padding: 14px 0 0 0;
+  margin: 14px 0 0;
+  padding: 14px 0 0;
   border: 1px solid #cdcdcd;
   opacity: 1;
+
   @media (min-width: $tablet) {
     width: 162px;
     height: 71px;
@@ -164,8 +165,8 @@
 }
 
 .example__value {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: $oswald;
   font-weight: 400;
@@ -175,13 +176,13 @@
 
   @media (min-width: $tablet) {
     margin: 0;
-    padding: 14px 0 11px 0;
+    padding: 14px 0 11px;
     font-size: 30px;
     line-height: 37px;
   }
 
   @media (min-width: $desktop) {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 10px;
     padding: 0;
     font-size: 30px;
     text-align: center;
@@ -189,7 +190,7 @@
 }
 
 .example__label {
-  margin: 0 0 0 0;
+  margin: 0;
   padding: 8px 2px 0 0;
   width: 70px;
   font-family: $lato;
@@ -222,10 +223,11 @@
     opacity: 1;
   }
 }
+
 .example__costs,
 .example__price {
-  margin: 32px 0 20px 0;
-  padding: 0 0 0 0;
+  margin: 32px 0 20px;
+  padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
@@ -240,7 +242,7 @@
     flex-direction: column;
     gap: 9px;
     margin: 0 2px 0 0;
-    padding: 0 0 0 0;
+    padding: 0;
     font-size: 20px;
     line-height: 20px;
     text-align: right;
@@ -248,7 +250,7 @@
 
   @media (min-width: $desktop) {
     margin: 0 52px 0 0;
-    padding: 0 0 0 0;
+    padding: 0;
     width: auto;
     font-size: 20px;
     display: flex;
@@ -262,7 +264,7 @@
     background-color: #eaeaea;
     position: relative;
     margin: 0;
-    padding: 0 0 102px 0;
+    padding: 0 0 102px;
 
     &::before {
       content: "";
