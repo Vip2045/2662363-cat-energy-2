@@ -4,7 +4,7 @@
   background-color: #fff;
 
   @media (min-width: $tablet) {
-    margin: 84px auto 53px;
+    margin: 83px auto 53px;
     padding: 0;
   }
 
@@ -13,6 +13,33 @@
     padding: 0;
   }
 }
+
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 0 4px;
+  border-bottom: 1px solid #ebebeb;
+  @media (min-width: $tablet) {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 708px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px 58px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 49px 78px;
+  }
+}
+
 .product__title {
   margin: 0;
   padding: 0 0 41px 20px;

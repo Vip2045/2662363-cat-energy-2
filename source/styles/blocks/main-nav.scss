@@ -21,7 +21,7 @@
   right: 21px;
   top: -45px;
   background: url("../../icons/stack.svg#burger");
-  color: #f2f2f2;
+  color: #000000;
   position: absolute;
   display: none;
   cursor: pointer;
@@ -85,6 +85,7 @@
   left: 0;
   z-index: 100;
   background: #ffffff;
+  color: #000000;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -132,7 +133,17 @@
   @media (min-width: $desktop) {
     color: #ffffff;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
+
+
 
 .main-nav__link--current {
   @media (min-width: $tablet) {
@@ -143,6 +154,14 @@
   @media (min-width: $desktop) {
     text-decoration: underline solid $thema 2px;
     text-underline-offset: 12px;
+  }
+
+   &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus{
+    opacity: 0.3;
   }
 }
 

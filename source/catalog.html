@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="preload"
+      href="fonts/oswald/oswaldregular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/lato/Lato-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
-     <!--favicon-->
-     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-     <link rel="apple-touch-icon" sizes="180x180" href="./favicons/favicon-apple-touch-icon.png">
-     <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png">
-     <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/favicon-apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" />
   </head>
 
   <body class="page__body">
@@ -46,17 +64,18 @@
 
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" aria-current="page"
-              >Главная</a
-            >
+            <a class="main-nav__link" href="index.html" aria-current="page">
+              Главная
+            </a>
           </li>
 
           <li class="main-nav__item">
             <a
               class="main-nav__link main-nav__link--current"
               href="catalog.html"
-              >Каталог продукции</a
             >
+              Каталог продукции
+            </a>
           </li>
 
           <li class="main-nav__item">
@@ -70,8 +89,8 @@
       <section class="product" data-test="product">
         <h1 class="product__title">Каталог продукции</h1>
         <h2 class="visually-hidden">Товары</h2>
-        <ul class="card__wrapper">
-          <!--Карточка товара 1 -->
+        <ul class="product__wrapper">
+          <!-- Карточка товара 1  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -79,23 +98,38 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-1-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-1-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-1-d@2x.png"
                     width="169"
                     height="210"
                     type="image/png"
                   />
+
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-1-t@2x.webp"
                     srcset="./images/product-card/product-card-1-t@2x.png"
                     width="200"
                     height="210"
                     type="image/png"
                   />
+
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-1-m@2x.webp"
-                    srcset="./images/product-card/product-card-1-m@2x.png"
+                    src="./images/product-card/product-card-1-m@2x.png"
+                    srcset="./images/product-card/product-card-1-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy PRO 500 г вкус курица"
@@ -135,7 +169,7 @@
             </a>
           </li>
 
-          <!--Карточка товара 2 -->
+          <!-- Карточка товара 2  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -143,6 +177,19 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-2-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-2-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-2-d@2x.png"
                     width="169"
                     height="210"
@@ -150,16 +197,16 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-2-t@2x.webp"
                     srcset="./images/product-card/product-card-2-t@2x.png"
                     width="200"
                     height="210"
                     type="image/png"
                   />
+
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-2-m@2x.webp"
-                    srcset="./images/product-card/product-card-2-m@2x.png"
+                    src="./images/product-card/product-card-2-m@2x.png"
+                    srcset="./images/product-card/product-card-2-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy PRO 1000 г вкус курица"
@@ -197,14 +244,27 @@
             </a>
           </li>
 
-          <!--Карточка товара 3 -->
+          <!-- Карточка товара 3  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
                 <picture>
                   <source
                     media="(min-width:1440px)"
-                    srcset="./images/product-card/product-card-3-m@2x.webp"
+                    srcset="./images/product-card/product-card-3-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-3-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-3-d@2x.png"
                     width="169"
                     height="210"
@@ -212,7 +272,6 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-3-t@2x.webp"
                     srcset="./images/product-card/product-card-3-t@2x.png"
                     width="200"
                     height="210"
@@ -220,8 +279,8 @@
                   />
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-3-m@2x.webp"
-                    srcset="./images/product-card/product-card-3-m@2x.png"
+                    src="./images/product-card/product-card-3-m@2x.png"
+                    srcset="./images/product-card/product-card-3-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy PRO 500 г вкус рыба"
@@ -259,7 +318,7 @@
             </a>
           </li>
 
-          <!--Карточка товара 4 -->
+          <!-- Карточка товара 4  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -267,6 +326,19 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-4-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-4-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-4-d@2x.png"
                     width="169"
                     height="210"
@@ -274,7 +346,6 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-4-t@2x.webp"
                     srcset="./images/product-card/product-card-4-t@2x.png"
                     width="200"
                     height="210"
@@ -282,8 +353,8 @@
                   />
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-4-m@2x.webp"
-                    srcset="./images/product-card/product-card-4-m@2x.png"
+                    src="./images/product-card/product-card-4-m@2x.png"
+                    srcset="./images/product-card/product-card-4-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy PRO 1000 г вкус рыба"
@@ -321,7 +392,7 @@
             </a>
           </li>
 
-          <!--Карточка товара 5 -->
+          <!-- Карточка товара 5  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -329,6 +400,19 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-5-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-5-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-5-d@2x.png"
                     width="169"
                     height="210"
@@ -336,7 +420,6 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-5-t@2x.webp"
                     srcset="./images/product-card/product-card-5-t@2x.png"
                     width="200"
                     height="210"
@@ -344,8 +427,8 @@
                   />
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-5-m@2x.webp"
-                    srcset="./images/product-card/product-card-5-m@2x.png"
+                    src="./images/product-card/product-card-5-m@2x.png"
+                    srcset="./images/product-card/product-card-5-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy SLIM 500 г вкус гречка"
@@ -383,7 +466,7 @@
             </a>
           </li>
 
-          <!--Карточка товара 6 -->
+          <!-- Карточка товара 6  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -391,6 +474,19 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-6-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-6-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-6-d@2x.png"
                     width="169"
                     height="210"
@@ -398,7 +494,6 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-6-t@2x.webp"
                     srcset="./images/product-card/product-card-6-t@2x.png"
                     width="200"
                     height="210"
@@ -406,11 +501,11 @@
                   />
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-6-m@2x.webp"
-                    srcset="./images/product-card/product-card-6-m@2x.png"
+                    src="./images/product-card/product-card-6-m@2x.png"
+                    srcset="./images/product-card/product-card-6-m@2x.webp 2x"
                     width="140"
                     height="107"
-                    alt="Cat Energy SLIM 1000 г вкус  гречка"
+                    alt="Cat Energy SLIM 1000 г вкус гречка"
                   />
                 </picture>
               </a>
@@ -445,7 +540,7 @@
             </a>
           </li>
 
-          <!--Карточка товара 7 -->
+          <!-- Карточка товара 7  -->
           <li class="card">
             <div class="card__container">
               <a class="card__link" href="./program.html">
@@ -453,6 +548,19 @@
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-7-d@2x.webp"
+                    width="169"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="./images/product-card/product-card-7-t@2x.webp"
+                    width="200"
+                    height="210"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
                     srcset="./images/product-card/product-card-7-d@2x.png"
                     width="169"
                     height="210"
@@ -460,7 +568,6 @@
                   />
                   <source
                     media="(min-width:768px)"
-                    srcset="./images/product-card/product-card-7-t@2x.webp"
                     srcset="./images/product-card/product-card-7-t@2x.png"
                     width="200"
                     height="210"
@@ -468,8 +575,8 @@
                   />
                   <img
                     class="card__image"
-                    srcset="./images/product-card/product-card-7-m@2x.webp"
                     src="./images/product-card/product-card-7-m@2x.png"
+                    srcset="./images/product-card/product-card-7-m@2x.webp 2x"
                     width="140"
                     height="107"
                     alt="Cat Energy SLIM 500 г вкус рис"
@@ -507,32 +614,46 @@
             </a>
           </li>
 
-          <!--Карточка добовления товара товара -->
+          <!-- Карточка добавления товара  -->
           <li class="card-add">
-            <div class="card-add__container">
-              <a class="card-add__link" href="./program.html">
+            <a class="card-add__link" href="./program.html">
+              <div class="card-add__container">
                 <picture>
                   <source
                     media="(min-width:1440px)"
                     srcset="./images/product-card/plus-d@2x.webp"
-                    srcset="./images/product-card/plus-d@2x.png"
                     width="60"
                     height="60"
+                    type="image/webp"
                   />
                   <source
                     media="(min-width:768px)"
                     srcset="./images/product-card/plus-t@2x.webp"
+                    width="60"
+                    height="60"
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width:1440px)"
+                    srcset="./images/product-card/plus-d@2x.png"
+                    width="60"
+                    height="60"
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:768px)"
                     srcset="./images/product-card/plus-t@2x.png"
                     width="60"
                     height="60"
+                    type="image/png"
                   />
                   <img
                     class="card-add__image"
-                    srcset="./images/product-card/plus-m@2x.webp"
-                    srcset="./images/product-card/plus-m@2x.png"
+                    src="./images/product-card/plus-m@2x.png"
+                    srcset="./images/product-card/plus-m@2x.webp 2x"
                     width="30"
                     height="30"
-                    alt="plus"
+                    alt="Показать еще товары"
                   />
                 </picture>
 
@@ -542,15 +663,14 @@
                     На самом деле вкусов гораздо больше!
                   </p>
                 </div>
-              </a>
-            </div>
 
-            <a
-              href="./program.html"
-              class="card-add__button button button--secondary"
-              aria-label="Показать все товары"
-            >
-              показать все
+                <span
+                  class="card-add__button button button--secondary"
+                  aria-hidden="true"
+                >
+                  показать все
+                </span>
+              </div>
             </a>
           </li>
         </ul>
@@ -736,13 +856,15 @@
     <footer class="footer" data-test="footer">
       <div class="footer__container">
         <a class="footer__logo" href="#">
-          <img
-            class="footer__logo-image"
-            src="./images/footer/footer-logo.svg"
+          <svg
             width="128"
             height="24"
-            alt="Логотип магазина"
-          />
+            viewBox="0 0 128 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./icons/stack.svg#footer-logo"></use>
+          </svg>
         </a>
 
         <div class="social">

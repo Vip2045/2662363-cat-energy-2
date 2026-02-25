@@ -214,8 +214,8 @@
 }
 
 .programs__link {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   display: inline-block;
   text-decoration: none;
   font-family: $oswald;
@@ -226,6 +226,7 @@
   text-align: left;
   color: #000000;
   position: relative;
+  transition: all 0.4s ease;
 
   @media (min-width: $tablet) {
     margin: 60px 0 0 53px;
@@ -239,6 +240,10 @@
     margin: 0 0 0 53px;
     padding: 0;
   }
+
+   &:active {
+    opacity: 0.3;
+   }
 }
 
 /* Стрелка для ссылки */
@@ -251,6 +256,7 @@
   height: 10px;
   background: url("../../icons/stack.svg#icon-arrow") no-repeat 0 0;
   position: absolute;
+  transition: 0.3s ease;
 
   @media (min-width: $tablet) {
     left: 114px;
@@ -260,5 +266,17 @@
   @media (min-width: $desktop) {
     left: 114px;
     top: 1px;
+    }
   }
+
+  .programs__link:hover::after {
+  transform: scale(1.2);
+  left: 120px; 
 }
+
+  .programs__link:active::after {
+  transform: scale(1.2);
+  left: 120px;
+  opacity: 0.3; 
+}
+

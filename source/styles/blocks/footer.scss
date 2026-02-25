@@ -42,10 +42,28 @@
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #111111;
 
   @media (min-width: $tablet) {
     display: block;
     margin: 0 0 0 0;
     padding: 0 160px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin: 0 0 0 0;
+    padding: 0 160px 0 0;
+
+    &:hover,
+    &:focus {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .subscribe {
   width: 100%;
   margin: 0;
-  padding: 0 0 40px 0;
+  padding: 0 0 40px;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
@@ -105,6 +105,8 @@
   height: 56px;
   outline: none;
   border-radius: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
   @media (min-width: $tablet) {
     width: 376px;
     margin: 0;
@@ -116,6 +118,21 @@
     margin: 0;
     padding: 9px 12px 0;
   }
+}
+
+.subscribe__input:hover {
+  border: 1px solid #cdcdcd;
+  border-color: #444444;
+}
+
+.subscribe__input:focus {
+  border: 2px solid #cdcdcd;
+  border-color: #444444;
+}
+
+.subscribe__input:active {
+  border: 2px solid #ff8282;
+  color: #444444;
 }
 
 ::placeholder {
