@@ -1,6 +1,6 @@
 .footer {
   margin: 0;
-  padding: 0 0 40px 0;
+  padding: 0 0 40px;
   background-color: #f2f2f2;
   text-align: center;
 
@@ -30,22 +30,40 @@
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
-    padding: 74px 0;
+    padding: 75px 0;
     align-items: flex-start;
     justify-content: space-between;
   }
 }
 
 .footer__logo {
-  margin: 40px 0 0 0;
-  padding: 0 0 15px 0;
+  margin: 40px 0 0;
+  padding: 0 0 15px;
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  color: #111111;
 
   @media (min-width: $tablet) {
     display: block;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0 160px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin: 0;
+    padding: 0 160px 0 0;
+
+    &:hover,
+    &:focus {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      color: #6b6b6b;
+    }
   }
 }

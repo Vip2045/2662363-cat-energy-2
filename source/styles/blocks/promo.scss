@@ -254,5 +254,14 @@
     line-height: 26px;
     position: relative;
     z-index: 5;
+
+    &:hover {
+      background-color: #5EAA2F;
+    }
+
+     &:active {
+      background-color: #5EAA2F;
+      opacity: 0.3; 
+    }
   }
 }
