@@ -35,6 +35,7 @@
     padding: 0;
     width: 100%;
   }
+
   @media (min-width: $desktop) {
     margin: 0 auto;
     padding: 0;
@@ -45,7 +46,7 @@
 .subscribe__description {
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px 24px 20px;
+  padding: 0 20px 24px;
   font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
@@ -100,13 +101,14 @@
 .subscribe__input {
   border: 1px solid #cdcdcd;
   margin: 0;
-  padding: 10px 13px 0px 13px;
+  padding: 10px 13px 0;
   width: 100%;
   height: 56px;
   outline: none;
   border-radius: none;
   cursor: pointer;
   transition: all 0.4s ease;
+
   @media (min-width: $tablet) {
     width: 376px;
     margin: 0;
@@ -144,6 +146,7 @@
   text-transform: uppercase;
   color: #444444;
   text-align: left;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;

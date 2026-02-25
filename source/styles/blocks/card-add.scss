@@ -9,7 +9,7 @@
   @media (min-width: $tablet) {
     width: 324px;
     margin: 101px auto 0;
-     padding: 0 37px 211px 37px;
+    padding: 0 37px 211px;
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
@@ -19,7 +19,7 @@
   @media (min-width: $desktop) {
     width: 245px;
     margin: 94px auto 0;
-    padding: 0 38px 80px 38px;
+    padding: 0 38px 80px;
     border-top: none;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
@@ -30,7 +30,7 @@
 .card-add__container {
   width: 100%;
   margin: 0 auto;
-  padding: 6px 0 0 0;
+  padding: 6px 0 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -63,6 +63,7 @@
   height: 30px;
   object-fit: cover;
   margin-bottom: 23px;
+
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
@@ -84,6 +85,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+
   @media (min-width: $tablet) {
     display: block;
     width: 170px;
@@ -91,7 +93,7 @@
     padding: 0;
   }
 
-   @media (min-width: $desktop) {
+  @media (min-width: $desktop) {
     display: block;
     width: 170px;
     margin: 0 auto 90px;
@@ -100,7 +102,7 @@
 }
 
 .card-add__title {
-  margin: 0 0 9px 0;
+  margin: 0 0 9px;
   padding: 0;
   font-family: $oswald;
   font-weight: 400;
@@ -108,6 +110,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
   @media (min-width: $tablet) {
     margin: 0 0 23px 19px;
     padding: 0;
@@ -127,7 +130,7 @@
 }
 
 .card-add__text {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   padding: 0;
   width: 219px;
   font-family: $lato;
@@ -136,9 +139,10 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+
   @media (min-width: $tablet) {
-    margin: 0 0 0 0;
-    padding: 0 0 0;
+    margin: 0;
+    padding: 0;
     width: 170px;
     font-size: 16px;
     line-height: 18px;
@@ -155,7 +159,7 @@
 }
 
 .card-add__button {
-   display: block;
+  display: block;
   width: 100%;
   margin: 0 auto;
   padding: 10px 20px;
@@ -168,17 +172,16 @@
   text-align: center;
   background-color: #f2f2f2;
   color: #444444;
-  cursor: pointer;
   transition: all 0.4s ease;
   cursor: pointer;
   text-decoration: none;
 
   &:hover {
-     background-color: #ebebeb;
+    background-color: #ebebeb;
   }
 
-   &:active {
-     background-color: #ebebeb;
+  &:active {
+    background-color: #ebebeb;
   }
 
   @media (min-width: $tablet) {
@@ -189,11 +192,10 @@
   }
 
   @media (min-width: $desktop) {
-     display: block;
+    display: block;
     width: 100%;
     margin: 0 auto;
     padding: 10px 20px;
   }
 }
-
 

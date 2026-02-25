@@ -5,6 +5,7 @@
   padding: 0;
   width: 100%;
   position: relative;
+
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
@@ -21,10 +22,9 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 0;  
+    left: 0;
     z-index: 1;
   }
-
 }
 
 .map__google {
@@ -33,7 +33,7 @@
   position: relative;
   z-index: 1;
 
-    @media (min-width: $tablet) {
+  @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -52,7 +52,7 @@
   @media (min-width: $desktop) {
     width: 407px;
     margin: 60px 80px;
-    padding: 0 0 0 0;
+    padding: 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -75,14 +75,15 @@
 .map__info {
   @media (min-width: $desktop) {
     width: 157px;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
     font-family: $lato;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #444444;
     font-style: normal;
+
     .line-spacing {
       display: inline-block;
       padding-top: 20px;
@@ -100,8 +101,9 @@
   background-size: cover;
   background-position: center center;
   z-index: 10;
-  background-image: image-set(
-    url("../../images/map/map-mobile@1x.jpg") 1x,
-    url("../../images/map/map-mobile@2x.jpg") 2x
-  );
+  background-image:
+    image-set(
+      url("../../images/map/map-mobile@1x.jpg") 1x,
+      url("../../images/map/map-mobile@2x.jpg") 2x
+    );
 }
