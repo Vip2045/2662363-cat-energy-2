@@ -59,18 +59,18 @@ export function processStyles() {
             url: (asset) =>
               asset.url.replace(
                 /icons\/(.+?)\.svg$/,
-                (match, p1) => `icons/stack.svg#${p1.replace(/\//g, '_')}`
+                (match, p1) => `icons/stack.svg#${p1.replace(/\//g, '_')}`,
               ),
             multi: true,
           },
         ]),
 
-         lightningcss({
-           lightningcssOptions: {
-             minify : true ,
+        lightningcss({
+          lightningcssOptions: {
+            minify: true,
           },
-         })
-      ])
+        }),
+      ]),
     )
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
@@ -84,12 +84,12 @@ export function processScripts() {
       gulpEsbuild({
         bundle: true,
         format: 'esm',
-        // splitting: true,
+        splitting: true,
         platform: 'browser',
         minify: !isDevelopment,
         sourcemap: isDevelopment,
         target: browserslistToEsbuild(),
-      })
+      }),
     )
     .pipe(dest(`${PATH_TO_DIST}scripts`))
     .pipe(server.stream());
@@ -135,13 +135,13 @@ export function createStack() {
 
 export function copyStatic() {
   return src(PATHS_TO_STATIC, { base: PATH_TO_SOURCE }).pipe(
-    dest(PATH_TO_DIST)
+    dest(PATH_TO_DIST),
   );
 }
 
 export function startServer() {
   const serveStatic = PATHS_TO_STATIC.filter(
-    (path) => path.startsWith('!') === false
+    (path) => path.startsWith('!') === false,
   ).map((path) => {
     const dir = path.replace(/(\/\*\*\/.*$)|\/$/, '');
     const route = dir.replace(PATH_TO_SOURCE, '/');
@@ -164,7 +164,7 @@ export function startServer() {
         res.write(readFileSync(`${PATH_TO_DIST}404.html`));
         res.end();
       });
-    }
+    },
   );
 
   watch(`${PATH_TO_SOURCE}**/*.{html,njk}`, series(processMarkup));
@@ -196,8 +196,8 @@ export function buildProd(done) {
       processStyles,
       processScripts,
       createStack,
-      copyStatic
-    )
+      copyStatic,
+    ),
   )(done);
 }
 
@@ -205,6 +205,6 @@ export function runDev(done) {
   series(
     removeBuild,
     parallel(processMarkup, processStyles, processScripts, createStack),
-    startServer
+    startServer,
   )(done);
 }
