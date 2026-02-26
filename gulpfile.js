@@ -65,11 +65,11 @@ export function processStyles() {
           },
         ]),
 
-        // lightningcss({
-        //   lightningcssOptions: {
-        //     minify : true ,
-        //   },
-        // })
+         lightningcss({
+           lightningcssOptions: {
+             minify : true ,
+          },
+         })
       ])
     )
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
