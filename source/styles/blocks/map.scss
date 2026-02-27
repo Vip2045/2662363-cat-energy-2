@@ -30,8 +30,9 @@
 .map__google {
   width: 100%;
   height: 362px;
-  position: relative;
   z-index: 1;
+  position: relative;
+
 
   @media (min-width: $tablet) {
     margin: 0;
@@ -45,6 +46,46 @@
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.map__images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:
+    image-set(
+      url("../../images/map/map-m@1x.webp") 1x,
+      url("../../images/map/map-m@2x.webp") 2x,
+      url("../../images/map/map-m@1x.jpg") 1x,
+      url("../../images/map/map-m@2x.jpg") 2x
+    );
+
+  @media (min-width: $tablet) {
+    background-image:
+      image-set(
+        url("../../images/map/map-t@1x.webp") 1x,
+        url("../../images/map/map-t@2x.webp") 2x,
+        url("../../images/map/map-t@1x.jpg") 1x,
+        url("../../images/map/map-t@2x.jpg") 2x
+      );
+  }
+
+  @media (min-width: $desktop) {
+    background-image:
+      image-set(
+        url("../../images/map/map-d@1x.webp") 1x,
+        url("../../images/map/map-d@2x.webp") 2x,
+        url("../../images/map/map-d@1x.jpg") 1x,
+        url("../../images/map/map-d@2x.jpg") 2x
+      );
+  }
 }
 
 
@@ -91,6 +132,7 @@
   }
 }
 
+
 .map__address {
   position: absolute;
   top: 0;
@@ -101,9 +143,4 @@
   background-size: cover;
   background-position: center center;
   z-index: 10;
-  background-image:
-    image-set(
-      url("../../images/map/map-mobile@1x.jpg") 1x,
-      url("../../images/map/map-mobile@2x.jpg") 2x
-    );
 }

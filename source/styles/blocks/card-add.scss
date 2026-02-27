@@ -5,6 +5,8 @@
   border-top: 1px solid #ebebeb;
   background-color: #ffffff;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 
   @media (min-width: $tablet) {
     width: 324px;
@@ -24,6 +26,10 @@
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     list-style: none;
+  }
+
+  &:hover {
+    transform: scale(1.08);
   }
 }
 
@@ -63,6 +69,7 @@
   height: 30px;
   object-fit: cover;
   margin-bottom: 23px;
+  transition: transform 0.4s ease;
 
   @media (min-width: $tablet) {
     width: 60px;
@@ -76,6 +83,10 @@
     height: 60px;
     margin: 0 auto 39px;
     padding: 0;
+  }
+
+  &:hover {
+    transform: scale(1.08);
   }
 }
 
@@ -110,6 +121,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  transition: color 0.4s ease;
 
   @media (min-width: $tablet) {
     margin: 0 0 23px 19px;
@@ -126,6 +138,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  &:hover {
+    color: #444444;
   }
 }
 
