@@ -8,6 +8,9 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+
 
   @media (min-width: $tablet) {
     display: flex;
@@ -42,6 +45,10 @@
     margin: 0 auto;
     background-color: #f2f2f2;
     padding: 0 38px 27px;
+  }
+
+  &:hover {
+    transform: scale(1.08);
   }
 }
 
@@ -81,6 +88,7 @@
   padding: 0;
   width: 140px;
   object-fit: cover;
+  transition: transform 0.3s ease;
 
   @media (min-width: $tablet) {
     display: block;
@@ -94,6 +102,10 @@
     width: 169px;
     height: 210px;
     margin: 23px auto 12px;
+  }
+
+  &:hover {
+    transition: transform 0.4s ease;
   }
 }
 
@@ -125,6 +137,7 @@
   color: #222222;
   margin: 0 0 15px;
   text-decoration: none;
+  transition: color 0.4s ease;
 
   @media (min-width: $tablet) {
     display: block;
@@ -144,6 +157,10 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+  }
+
+  &:hover {
+    color: #444444;
   }
 }
 
